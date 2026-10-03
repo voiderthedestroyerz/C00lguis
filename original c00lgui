@@ -1,0 +1,1869 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Script" referent="RBX0">
+		<Properties>
+			<bool name="Disabled">false</bool>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">c00lGui V4.35</string>
+			<ProtectedString name="Source">--Thanks for using my script :D--
+Version = 4.35
+
+s = Instance.new(&quot;Sky&quot;)
+s.Name = &quot;Sky&quot;
+s.Parent = game.Lighting
+
+playername100 = game.Players.LocalPlayer.Name
+yolo = Instance.new(&quot;StringValue&quot;)
+yolo.Parent = game.Workspace
+yolo.Name  = &quot;Owner&quot;
+yolo.Value = playername100
+
+god = false
+invisib = false
+
+servertrollguiv1 = Instance.new(&quot;ScreenGui&quot;)
+servertrollguiv1.Parent = game:GetService(&quot;CoreGui&quot;)
+servertrollguiv1.Name = (&quot;c00lGui V&quot;..Version)
+
+interface = Instance.new(&quot;Frame&quot;)
+interface.Parent = servertrollguiv1
+interface.Name = (&quot;Interface&quot;)
+interface.BackgroundTransparency = 1
+interface.Visible = false
+
+scripts = Instance.new(&quot;Frame&quot;)
+scripts.Parent = interface
+scripts.Name = (&quot;Scripts&quot;)
+scripts.BackgroundTransparency = 1
+scripts.Visible = false
+
+rsettings = Instance.new(&quot;Frame&quot;)
+rsettings.Parent = interface
+rsettings.Name = (&quot;RSettings&quot;)
+rsettings.BackgroundTransparency = 1
+rsettings.Visible = false
+rsettings.Position = UDim2.new(0,0,0,-63)
+
+page1 = Instance.new(&quot;Frame&quot;)
+page1.Parent = scripts
+page1.Name = (&quot;Page 1&quot;)
+page1.BackgroundTransparency = 1
+page1.Visible = true
+
+page2 = Instance.new(&quot;Frame&quot;)
+page2.Parent = scripts
+page2.Name = (&quot;Page 2&quot;)
+page2.BackgroundTransparency = 1
+page2.Visible = false
+
+gears = Instance.new(&quot;Frame&quot;)
+gears.Parent = interface
+gears.Name = (&quot;Gears&quot;)
+gears.BackgroundTransparency = 1
+gears.Visible = false
+
+selfcmds = Instance.new(&quot;Frame&quot;)
+selfcmds.Parent = interface
+selfcmds.Name = (&quot;Self Cmds&quot;)
+selfcmds.BackgroundTransparency = 1
+selfcmds.Visible = false
+
+credits = Instance.new(&quot;Frame&quot;)
+credits.Parent = interface
+credits.Name = (&quot;Credits&quot;)
+credits.BackgroundTransparency = 1
+credits.Visible = false
+credits.Position = UDim2.new(0,270,0,0)
+
+ulog = Instance.new(&quot;Frame&quot;)
+ulog.Parent = interface
+ulog.Name = (&quot;Update Log&quot;)
+ulog.BackgroundTransparency = 1
+ulog.Visible = false
+ulog.Position = UDim2.new(0,270,0,0)
+
+showgui = Instance.new(&quot;TextButton&quot;)
+showgui.Parent = servertrollguiv1
+showgui.Position = UDim2.new(0, 0, 0, 652)
+showgui.Size = UDim2.new(0, 100, 0, 20)
+showgui.Name = (&quot;Show Gui&quot;)
+showgui.Text = (&quot;Show Gui&quot;)
+showgui.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+showgui.Font = (&quot;SourceSans&quot;)
+showgui.FontSize = (&quot;Size14&quot;)
+showgui.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+function showguiClick()
+&#9;if interface.Visible == false then
+&#9;showgui.Text = (&quot;Hide Gui&quot;)
+&#9;interface.Visible = true else
+&#9;showgui.Text = (&quot;Show Gui&quot;)
+&#9;interface.Visible = false
+end
+end
+
+showgui.MouseButton1Down:connect(showguiClick)
+
+showcredits = Instance.new(&quot;TextButton&quot;)
+showcredits.Parent = interface
+showcredits.Position = UDim2.new(0, 202, 0, 610)
+showcredits.Size = UDim2.new(0, 100, 0, 20)
+showcredits.Name = (&quot;Credits&quot;)
+showcredits.Text = (&quot;Credits&quot;)
+showcredits.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+showcredits.Font = (&quot;SourceSans&quot;)
+showcredits.FontSize = (&quot;Size14&quot;)
+showcredits.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+function showcreditsClick()
+&#9;if credits.Visible == false then
+&#9;credits.Visible = true
+end
+end
+
+showcredits.MouseButton1Down:connect(showcreditsClick)
+
+closecredits = Instance.new(&quot;TextButton&quot;)
+closecredits.Parent = credits
+closecredits.Name = (&quot;Close&quot;)
+closecredits.Text = (&quot;Close&quot;)
+closecredits.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+closecredits.BackgroundTransparency = 0.5
+closecredits.BorderSizePixel = 0
+closecredits.Position = UDim2.new(0, 350, 0, 560)
+closecredits.Size = UDim2.new(0, 250, 0, 20)
+closecredits.ZIndex = 2
+closecredits.Font = (&quot;SourceSans&quot;)
+closecredits.FontSize = (&quot;Size14&quot;)
+closecredits.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function onClose()
+if credits.Visible == true then
+credits.Visible = false
+end
+end
+
+closecredits.MouseButton1Down:connect(onClose)
+
+content = Instance.new(&quot;TextLabel&quot;)
+content.Parent = credits
+content.Name = (&quot;Content&quot;)
+content.BackgroundColor3 = Color3.new(255/255, 255/255, 255/255)
+content.BackgroundTransparency = 0.5
+content.Position = UDim2.new(0, 350, 0, 180)
+content.Size = UDim2.new(0, 250, 0, 400)
+content.Font = (&quot;SourceSans&quot;)
+content.FontSize = (&quot;Size14&quot;)
+content.Text = ([[
+
+
+
+
+colin - Anti-Robloxian
+InternalRecursion - Atlas Sword
+colin - 5tr0b3
+Animus - Silent Executor
+sinkinq - Decal Spam
+colin - Disco
+Woodcrafter - Suicide Vest
+colin - Wrecking Ball]])
+content.TextYAlignment = (&quot;Top&quot;)
+
+header = Instance.new(&quot;TextLabel&quot;)
+header.Parent = credits
+header.Name = (&quot;Header&quot;)
+header.BackgroundTransparency = 1
+header.Position = UDim2.new(0, 355, 0, 180)
+header.Size = UDim2.new(0, 240, 0, 60)
+header.Font = (&quot;SourceSans&quot;)
+header.FontSize = (&quot;Size48&quot;)
+header.Text = (&quot;Credits&quot;)
+header.TextColor3 = Color3.new(255/255, 0/255, 0/255)
+
+showulog = Instance.new(&quot;TextButton&quot;)
+showulog.Parent = interface
+showulog.Position = UDim2.new(0, 202, 0, 631)
+showulog.Size = UDim2.new(0, 100, 0, 20)
+showulog.Name = (&quot;Update Log&quot;)
+showulog.Text = (&quot;Update Log&quot;)
+showulog.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+showulog.Font = (&quot;SourceSans&quot;)
+showulog.FontSize = (&quot;Size14&quot;)
+showulog.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+function showulogClick()
+&#9;if ulog.Visible == false then
+&#9;ulog.Visible =true
+end
+end
+
+showulog.MouseButton1Down:connect(showulogClick)
+
+closeulog = Instance.new(&quot;TextButton&quot;)
+closeulog.Parent = ulog
+closeulog.Name = (&quot;Close&quot;)
+closeulog.Text = (&quot;Close&quot;)
+closeulog.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+closeulog.BackgroundTransparency = 0.5
+closeulog.BorderSizePixel = 0
+closeulog.Position = UDim2.new(0, 603, 0, 560)
+closeulog.Size = UDim2.new(0, 250, 0, 20)
+closeulog.ZIndex = 2
+closeulog.Font = (&quot;SourceSans&quot;)
+closeulog.FontSize = (&quot;Size14&quot;)
+closeulog.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function onClose1()
+if ulog.Visible == true then
+ulog.Visible = false
+end
+end
+
+closeulog.MouseButton1Down:connect(onClose1)
+
+content1 = Instance.new(&quot;TextLabel&quot;)
+content1.Parent = ulog
+content1.Name = (&quot;Content&quot;)
+content1.BackgroundColor3 = Color3.new(255/255, 255/255, 255/255)
+content1.BackgroundTransparency = 0.5
+content1.Position = UDim2.new(0, 603, 0, 180)
+content1.Size = UDim2.new(0, 250, 0, 400)
+content1.Font = (&quot;SourceSans&quot;)
+content1.FontSize = (&quot;Size14&quot;)
+content1.Text = ([[
+
+
+
+
+-Changed layout
+-Removed lag gui
+-Removed kick gui
+-Removed kill gui
+-Removed kill all
+-Removed kick all
+-Removed girl scripts]])
+content1.TextYAlignment = (&quot;Top&quot;)
+
+header1 = Instance.new(&quot;TextLabel&quot;)
+header1.Parent = ulog
+header1.Name = (&quot;Header&quot;)
+header1.BackgroundTransparency = 1
+header1.Position = UDim2.new(0, 608, 0, 180)
+header1.Size = UDim2.new(0, 240, 0, 60)
+header1.Font = (&quot;SourceSans&quot;)
+header1.FontSize = (&quot;Size48&quot;)
+header1.Text = (&quot;Version: &quot;..Version)
+header1.TextColor3 = Color3.new(255/255, 0/255, 0/255)
+
+skyboxidbox = Instance.new(&quot;TextBox&quot;)
+skyboxidbox.Parent = rsettings
+skyboxidbox.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+skyboxidbox.Position = UDim2.new(0, 101, 0, 358)
+skyboxidbox.Size = UDim2.new(0, 100, 0, 20)
+skyboxidbox.Font = (&quot;SourceSans&quot;)
+skyboxidbox.FontSize = (&quot;Size14&quot;)
+skyboxidbox.Text = (&quot;142285971&quot;)
+skyboxidbox.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+skyboxidlabel = Instance.new(&quot;TextLabel&quot;)
+skyboxidlabel.Parent = rsettings
+skyboxidlabel.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+skyboxidlabel.Position = UDim2.new(0, 0, 0, 358)
+skyboxidlabel.Size = UDim2.new(0, 100, 0, 20)
+skyboxidlabel.Font = (&quot;SourceSans&quot;)
+skyboxidlabel.FontSize = (&quot;Size14&quot;)
+skyboxidlabel.Text = (&quot;Skybox/Decal ID:&quot;)
+skyboxidlabel.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+settingsbutton = Instance.new(&quot;TextButton&quot;)
+settingsbutton.Parent = interface
+settingsbutton.Position = UDim2.new(0, 101, 0, 631)
+settingsbutton.Size = UDim2.new(0, 100, 0, 20)
+settingsbutton.Name = (&quot;Settings Button&quot;)
+settingsbutton.Text = (&quot;Open Self Cmds&quot;)
+settingsbutton.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+settingsbutton.Font = (&quot;SourceSans&quot;)
+settingsbutton.FontSize = (&quot;Size14&quot;)
+settingsbutton.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+function settingsbuttonClick()
+&#9;if selfcmds.Visible == false then
+&#9;settingsbutton.Text = (&quot;Close Self Cmds&quot;)
+&#9;selfcmds.Visible = true else
+&#9;settingsbutton.Text = (&quot;Open Self Cmds&quot;)
+&#9;selfcmds.Visible = false
+end
+end
+
+settingsbutton.MouseButton1Down:connect(settingsbuttonClick)
+
+scriptsbutton = Instance.new(&quot;TextButton&quot;)
+scriptsbutton.Parent = interface
+scriptsbutton.Position = UDim2.new(0, 0, 0, 631)
+scriptsbutton.Size = UDim2.new(0, 100, 0, 20)
+scriptsbutton.Name = (&quot;Scripts Button&quot;)
+scriptsbutton.Text = (&quot;Open Scripts&quot;)
+scriptsbutton.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+scriptsbutton.Font = (&quot;SourceSans&quot;)
+scriptsbutton.FontSize = (&quot;Size14&quot;)
+scriptsbutton.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+function scriptsbuttonClick()
+&#9;if scripts.Visible == false then
+&#9;scriptsbutton.Text = (&quot;Close Scripts&quot;)
+&#9;scripts.Visible = true else
+&#9;scriptsbutton.Text = (&quot;Open Scripts&quot;)
+&#9;scripts.Visible = false
+end
+end
+
+scriptsbutton.MouseButton1Down:connect(scriptsbuttonClick)
+
+gearsbutton = Instance.new(&quot;TextButton&quot;)
+gearsbutton.Parent = interface
+gearsbutton.Position = UDim2.new(0, 101, 0, 610)
+gearsbutton.Size = UDim2.new(0, 100, 0, 20)
+gearsbutton.Name = (&quot;gears Button&quot;)
+gearsbutton.Text = (&quot;Open Gears&quot;)
+gearsbutton.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+gearsbutton.Font = (&quot;SourceSans&quot;)
+gearsbutton.FontSize = (&quot;Size14&quot;)
+gearsbutton.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+function gearsbuttonClick()
+&#9;if gears.Visible == false then
+&#9;gearsbutton.Text = (&quot;Close Gears&quot;)
+&#9;gears.Visible = true else
+&#9;gearsbutton.Text = (&quot;Open Gears&quot;)
+&#9;gears.Visible = false
+end
+end
+
+gearsbutton.MouseButton1Down:connect(gearsbuttonClick)
+
+rsettingsbutton = Instance.new(&quot;TextButton&quot;)
+rsettingsbutton.Parent = interface
+rsettingsbutton.Position = UDim2.new(0, 0, 0, 610)
+rsettingsbutton.Size = UDim2.new(0, 100, 0, 20)
+rsettingsbutton.Name = (&quot;rsettings Button&quot;)
+rsettingsbutton.Text = (&quot;Open Settings&quot;)
+rsettingsbutton.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+rsettingsbutton.Font = (&quot;SourceSans&quot;)
+rsettingsbutton.FontSize = (&quot;Size14&quot;)
+rsettingsbutton.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+function rsettingsbuttonClick()
+&#9;if rsettings.Visible == false then
+&#9;rsettingsbutton.Text = (&quot;Close Settings&quot;)
+&#9;rsettings.Visible = true else
+&#9;rsettingsbutton.Text = (&quot;Open Settings&quot;)
+&#9;rsettings.Visible = false
+end
+end
+
+rsettingsbutton.MouseButton1Down:connect(rsettingsbuttonClick)
+
+leftarrow = Instance.new(&quot;TextButton&quot;)
+leftarrow.Parent = scripts
+leftarrow.Position = UDim2.new(0, 0, 0, 589)
+leftarrow.Size = UDim2.new(0, 100, 0, 20)
+leftarrow.Name = (&quot;&lt;&quot;)
+leftarrow.Text = (&quot;&lt;&quot;)
+leftarrow.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+leftarrow.Font = (&quot;SourceSans&quot;)
+leftarrow.FontSize = (&quot;Size14&quot;)
+leftarrow.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+function leftarrowClick()
+if page1.Visible == true then
+page1.Visible = false
+page2.Visible = true else
+if page2.Visible == true then
+page2.Visible = false
+page1.Visible = true
+end
+end&#9;
+end
+
+leftarrow.MouseButton1Down:connect(leftarrowClick)
+
+rightarrow = Instance.new(&quot;TextButton&quot;)
+rightarrow.Parent = scripts
+rightarrow.Position = UDim2.new(0, 101, 0, 589)
+rightarrow.Size = UDim2.new(0, 100, 0, 20)
+rightarrow.Name = (&quot;&gt;&quot;)
+rightarrow.Text = (&quot;&gt;&quot;)
+rightarrow.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+rightarrow.Font = (&quot;SourceSans&quot;)
+rightarrow.FontSize = (&quot;Size14&quot;)
+rightarrow.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+function rightarrowClick()
+if page1.Visible == true then
+page1.Visible = false
+page2.Visible = true else
+if page2.Visible == true then
+page2.Visible = false
+page1.Visible = true
+end
+end&#9;
+end
+
+rightarrow.MouseButton1Down:connect(rightarrowClick)
+
+godtoggle = Instance.new(&quot;TextButton&quot;)
+godtoggle.Parent = selfcmds
+godtoggle.Position = UDim2.new(0, 202, 0, 358)
+godtoggle.Size = UDim2.new(0, 100, 0, 20)
+godtoggle.Name = (&quot;God Toggle&quot;)
+godtoggle.Text = (&quot;God Mode: Off&quot;)
+godtoggle.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+godtoggle.Font = (&quot;SourceSans&quot;)
+godtoggle.FontSize = (&quot;Size14&quot;)
+godtoggle.BackgroundColor3 = Color3.new(0/255, 170/255, 255/255)
+
+function godtoggleClick()
+&#9;if god == false then
+&#9;game.Workspace[playername100].Humanoid.MaxHealth = math.huge
+&#9;game.Workspace[playername100].Humanoid.Health = math.huge
+&#9;god = true
+&#9;godtoggle.Text = (&quot;God Mode: On&quot;)
+&#9;else
+&#9;game.Workspace[playername100].Humanoid.MaxHealth = 100
+&#9;game.Workspace[playername100].Humanoid.Health = 100
+&#9;god = false
+&#9;godtoggle.Text = (&quot;God Mode: Off&quot;)
+end
+end
+
+godtoggle.MouseButton1Down:connect(godtoggleClick)
+
+giveairstrike = Instance.new(&quot;TextButton&quot;)
+giveairstrike.Parent = gears
+giveairstrike.Position = UDim2.new(0, 202, 0, 337)
+giveairstrike.Size = UDim2.new(0, 100, 0, 20)
+giveairstrike.Name = (&quot;Airstrike&quot;)
+giveairstrike.Text = (&quot;Airstrike&quot;)
+giveairstrike.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+giveairstrike.Font = (&quot;SourceSans&quot;)
+giveairstrike.FontSize = (&quot;Size14&quot;)
+giveairstrike.BackgroundColor3 = Color3.new(255/255, 85/255, 0/255)
+
+function giveairstrikeClick()
+x = game:GetService(&quot;InsertService&quot;):LoadAsset(88885539) x.Parent = game.Workspace x:makeJoints() x:MoveTo(game.Players[playername100].Character.Head.Position)
+end
+
+giveairstrike.MouseButton1Down:connect(giveairstrikeClick)
+
+givesword = Instance.new(&quot;TextButton&quot;)
+givesword.Parent = gears
+givesword.Position = UDim2.new(0, 101, 0, 337)
+givesword.Size = UDim2.new(0, 100, 0, 20)
+givesword.Name = (&quot;Sword&quot;)
+givesword.Text = (&quot;Sword&quot;)
+givesword.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+givesword.Font = (&quot;SourceSans&quot;)
+givesword.FontSize = (&quot;Size14&quot;)
+givesword.BackgroundColor3 = Color3.new(255/255, 85/255, 0/255)
+
+function giveswordClick()
+x = game:GetService(&quot;InsertService&quot;):LoadAsset(47433) x.Parent = game.Workspace x:makeJoints() x:MoveTo(game.Players[playername100].Character.Head.Position)
+end
+
+givesword.MouseButton1Down:connect(giveswordClick)
+
+givegravitycoil = Instance.new(&quot;TextButton&quot;)
+givegravitycoil.Parent = gears
+givegravitycoil.Position = UDim2.new(0, 0, 0, 337)
+givegravitycoil.Size = UDim2.new(0, 100, 0, 20)
+givegravitycoil.Name = (&quot;Give Gravity Coil&quot;)
+givegravitycoil.Text = (&quot;Give Gravity Coil&quot;)
+givegravitycoil.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+givegravitycoil.Font = (&quot;SourceSans&quot;)
+givegravitycoil.FontSize = (&quot;Size14&quot;)
+givegravitycoil.BackgroundColor3 = Color3.new(255/255, 85/255, 0/255)
+
+function givegravitycoilClick()
+x = game:GetService(&quot;InsertService&quot;):LoadAsset(16688968) x.Parent = game.Workspace x:makeJoints() x:MoveTo(game.Players[playername100].Character.Head.Position)
+end
+
+givegravitycoil.MouseButton1Down:connect(givegravitycoilClick)
+
+heal = Instance.new(&quot;TextButton&quot;)
+heal.Parent = selfcmds
+heal.Position = UDim2.new(0, 101, 0, 358)
+heal.Size = UDim2.new(0, 100, 0, 20)
+heal.Name = (&quot;Heal&quot;)
+heal.Text = (&quot;Heal&quot;)
+heal.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+heal.Font = (&quot;SourceSans&quot;)
+heal.FontSize = (&quot;Size14&quot;)
+heal.BackgroundColor3 = Color3.new(0/255, 170/255, 255/255)
+
+function healClick()
+h = game.Workspace[playername100].Humanoid.MaxHealth
+game.Workspace[playername100].Humanoid.Health = h
+end
+
+heal.MouseButton1Down:connect(healClick)
+
+givestampertools = Instance.new(&quot;TextButton&quot;)
+givestampertools.Parent = gears
+givestampertools.Position = UDim2.new(0, 0, 0, 316)
+givestampertools.Size = UDim2.new(0, 100, 0, 20)
+givestampertools.Name = (&quot;Give Stamper Tools&quot;)
+givestampertools.Text = (&quot;Give Stamper Tools&quot;)
+givestampertools.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+givestampertools.Font = (&quot;SourceSans&quot;)
+givestampertools.FontSize = (&quot;Size14&quot;)
+givestampertools.BackgroundColor3 = Color3.new(255/255, 85/255, 0/255)
+
+function givestampertoolsClick()
+x = game:GetService(&quot;InsertService&quot;):LoadAsset(73089166) x.Parent = game.Workspace x:makeJoints() x:MoveTo(game.Players[playername100].Character.Head.Position)
+x = game:GetService(&quot;InsertService&quot;):LoadAsset(73089204) x.Parent = game.Workspace x:makeJoints() x:MoveTo(game.Players[playername100].Character.Head.Position)
+x = game:GetService(&quot;InsertService&quot;):LoadAsset(73089190) x.Parent = game.Workspace x:makeJoints() x:MoveTo(game.Players[playername100].Character.Head.Position)
+x = game:GetService(&quot;InsertService&quot;):LoadAsset(58880579) x.Parent = game.Workspace x:makeJoints() x:MoveTo(game.Players[playername100].Character.Head.Position)
+x = game:GetService(&quot;InsertService&quot;):LoadAsset(60791062) x.Parent = game.Workspace x:makeJoints() x:MoveTo(game.Players[playername100].Character.Head.Position)
+x = game:GetService(&quot;InsertService&quot;):LoadAsset(73089239) x.Parent = game.Workspace x:makeJoints() x:MoveTo(game.Players[playername100].Character.Head.Position)
+end
+
+givestampertools.MouseButton1Down:connect(givestampertoolsClick)
+
+walkspeedlabel = Instance.new(&quot;TextLabel&quot;)
+walkspeedlabel.Parent = rsettings
+walkspeedlabel.Position = UDim2.new(0, 0, 0, 169)
+walkspeedlabel.Size = UDim2.new(0, 100, 0, 20)
+walkspeedlabel.Name = (&quot;Walkspeed Label&quot;)
+walkspeedlabel.Text = (&quot;Walkspeed:&quot;)
+walkspeedlabel.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+walkspeedlabel.Font = (&quot;SourceSans&quot;)
+walkspeedlabel.FontSize = (&quot;Size14&quot;)
+walkspeedlabel.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+walkspeedbox = Instance.new(&quot;TextBox&quot;)
+walkspeedbox.Parent = rsettings
+walkspeedbox.Position = UDim2.new(0, 101, 0, 169)
+walkspeedbox.Size = UDim2.new(0, 100, 0, 20)
+walkspeedbox.Name = (&quot;Walkspeed Box&quot;)
+walkspeedbox.Text = (&quot;50&quot;)
+walkspeedbox.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+walkspeedbox.Font = (&quot;SourceSans&quot;)
+walkspeedbox.FontSize = (&quot;Size14&quot;)
+walkspeedbox.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+namelabel = Instance.new(&quot;TextLabel&quot;)
+namelabel.Parent = rsettings
+namelabel.Position = UDim2.new(0, 0, 0, 190)
+namelabel.Size = UDim2.new(0, 100, 0, 20)
+namelabel.Name = (&quot;Name Label&quot;)
+namelabel.Text = (&quot;Change Name:&quot;)
+namelabel.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+namelabel.Font = (&quot;SourceSans&quot;)
+namelabel.FontSize = (&quot;Size14&quot;)
+namelabel.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+namebox = Instance.new(&quot;TextBox&quot;)
+namebox.Parent = rsettings
+namebox.Position = UDim2.new(0, 101, 0, 190)
+namebox.Size = UDim2.new(0, 100, 0, 20)
+namebox.Name = (&quot;Name Box&quot;)
+namebox.Text = (&quot;God&quot;)
+namebox.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+namebox.Font = (&quot;SourceSans&quot;)
+namebox.FontSize = (&quot;Size14&quot;)
+namebox.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+arstudslabel = Instance.new(&quot;TextLabel&quot;)
+arstudslabel.Parent = rsettings
+arstudslabel.Position = UDim2.new(0, 0, 0, 337)
+arstudslabel.Size = UDim2.new(0, 100, 0, 20)
+arstudslabel.Name = (&quot;Name Label&quot;)
+arstudslabel.Text = (&quot;A-R Studs:&quot;)
+arstudslabel.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+arstudslabel.Font = (&quot;SourceSans&quot;)
+arstudslabel.FontSize = (&quot;Size14&quot;)
+arstudslabel.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+arstudsbox = Instance.new(&quot;TextBox&quot;)
+arstudsbox.Parent = rsettings
+arstudsbox.Position = UDim2.new(0, 101, 0, 337)
+arstudsbox.Size = UDim2.new(0, 100, 0, 20)
+arstudsbox.Name = (&quot;A-R Studs Box&quot;)
+arstudsbox.Text = (&quot;13&quot;)
+arstudsbox.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+arstudsbox.Font = (&quot;SourceSans&quot;)
+arstudsbox.FontSize = (&quot;Size14&quot;)
+arstudsbox.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+arstudsval = Instance.new(&quot;NumberValue&quot;)
+arstudsval.Parent = script
+arstudsval.Value = arstudsbox.Text
+
+hatlabel = Instance.new(&quot;TextLabel&quot;)
+hatlabel.Parent = rsettings
+hatlabel.Position = UDim2.new(0, 0, 0, 211)
+hatlabel.Size = UDim2.new(0, 100, 0, 20)
+hatlabel.Name = (&quot;Hat Label&quot;)
+hatlabel.Text = (&quot;Hat ID:&quot;)
+hatlabel.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+hatlabel.Font = (&quot;SourceSans&quot;)
+hatlabel.FontSize = (&quot;Size14&quot;)
+hatlabel.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+hatbox = Instance.new(&quot;TextBox&quot;)
+hatbox.Parent = rsettings
+hatbox.Position = UDim2.new(0, 101, 0, 211)
+hatbox.Size = UDim2.new(0, 100, 0, 20)
+hatbox.Name = (&quot;Hat Box&quot;)
+hatbox.Text = (&quot;31101391&quot;)
+hatbox.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+hatbox.Font = (&quot;SourceSans&quot;)
+hatbox.FontSize = (&quot;Size14&quot;)
+hatbox.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+gearlabel = Instance.new(&quot;TextLabel&quot;)
+gearlabel.Parent = rsettings
+gearlabel.Position = UDim2.new(0, 0, 0, 232)
+gearlabel.Size = UDim2.new(0, 100, 0, 20)
+gearlabel.Name = (&quot;Gear Label&quot;)
+gearlabel.Text = (&quot;Gear ID:&quot;)
+gearlabel.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+gearlabel.Font = (&quot;SourceSans&quot;)
+gearlabel.FontSize = (&quot;Size14&quot;)
+gearlabel.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+gearbox = Instance.new(&quot;TextBox&quot;)
+gearbox.Parent = rsettings
+gearbox.Position = UDim2.new(0, 101, 0, 232)
+gearbox.Size = UDim2.new(0, 100, 0, 20)
+gearbox.Name = (&quot;Gear Box&quot;)
+gearbox.Text = (&quot;16895215&quot;)
+gearbox.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+gearbox.Font = (&quot;SourceSans&quot;)
+gearbox.FontSize = (&quot;Size14&quot;)
+gearbox.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+forcetplabel = Instance.new(&quot;TextLabel&quot;)
+forcetplabel.Parent = rsettings
+forcetplabel.Position = UDim2.new(0, 0, 0, 316)
+forcetplabel.Size = UDim2.new(0, 100, 0, 20)
+forcetplabel.Name = (&quot;Force Teleport Label&quot;)
+forcetplabel.Text = (&quot;Force TP ID:&quot;)
+forcetplabel.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+forcetplabel.Font = (&quot;SourceSans&quot;)
+forcetplabel.FontSize = (&quot;Size14&quot;)
+forcetplabel.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+forcetpbox = Instance.new(&quot;TextBox&quot;)
+forcetpbox.Parent = rsettings
+forcetpbox.Position = UDim2.new(0, 101, 0, 316)
+forcetpbox.Size = UDim2.new(0, 100, 0, 20)
+forcetpbox.Name = (&quot;Force Teleport Box&quot;)
+forcetpbox.Text = (&quot;134323087&quot;)
+forcetpbox.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+forcetpbox.Font = (&quot;SourceSans&quot;)
+forcetpbox.FontSize = (&quot;Size14&quot;)
+forcetpbox.BackgroundColor3 = Color3.new(85/255, 255/255, 0/255)
+
+invisi = Instance.new(&quot;TextButton&quot;)
+invisi.Parent = selfcmds
+invisi.Position = UDim2.new(0, 0, 0, 358)
+invisi.Size = UDim2.new(0, 100, 0, 20)
+invisi.Name = (&quot;Invisible&quot;)
+invisi.Text = (&quot;Invisible: Off&quot;)
+invisi.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+invisi.Font = (&quot;SourceSans&quot;)
+invisi.FontSize = (&quot;Size14&quot;)
+invisi.BackgroundColor3 = Color3.new(0/255, 170/255, 255/255)
+
+function invisiClick()
+playername100 = game.Players.LocalPlayer.Name
+if invisib == false then
+game.Workspace[playername100].Head.Transparency = 1
+game.Workspace[playername100].Head.face.Transparency = 1
+game.Workspace[playername100].Torso.Transparency = 1
+game.Workspace[playername100][&quot;Right Arm&quot;].Transparency = 1
+game.Workspace[playername100][&quot;Left Arm&quot;].Transparency = 1
+game.Workspace[playername100][&quot;Right Leg&quot;].Transparency = 1
+game.Workspace[playername100][&quot;Left Leg&quot;].Transparency = 1
+invisi.Text = (&quot;Invisible: On&quot;)
+invisib = true else
+game.Workspace[playername100].Head.Transparency = 0
+game.Workspace[playername100].Head.face.Transparency = 0
+game.Workspace[playername100].Torso.Transparency = 0
+game.Workspace[playername100][&quot;Right Arm&quot;].Transparency = 0
+game.Workspace[playername100][&quot;Left Arm&quot;].Transparency = 0
+game.Workspace[playername100][&quot;Right Leg&quot;].Transparency = 0
+game.Workspace[playername100][&quot;Left Leg&quot;].Transparency = 0
+invisi.Text = (&quot;Invisible: Off&quot;)
+invisib = false
+end&#9;
+end
+
+invisi.MouseButton1Down:connect(invisiClick) 
+
+setskybox = Instance.new(&quot;TextButton&quot;)
+setskybox.Parent = page1
+setskybox.Name = (&quot;Set Skybox&quot;)
+setskybox.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+setskybox.Position = UDim2.new(0, 0, 0, 568)
+setskybox.Size = UDim2.new(0, 100, 0, 20)
+setskybox.Text = (&quot;Set Skybox&quot;)
+setskybox.Font = (&quot;SourceSans&quot;)
+setskybox.FontSize = (&quot;Size14&quot;)
+setskybox.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function setskyboxClick()
+skyboxID = (skyboxidbox.Text)
+s.SkyboxBk = &quot;http://www.roblox.com/asset/?id=&quot;..skyboxID
+s.SkyboxDn = &quot;http://www.roblox.com/asset/?id=&quot;..skyboxID
+s.SkyboxFt = &quot;http://www.roblox.com/asset/?id=&quot;..skyboxID
+s.SkyboxLf = &quot;http://www.roblox.com/asset/?id=&quot;..skyboxID
+s.SkyboxRt = &quot;http://www.roblox.com/asset/?id=&quot;..skyboxID
+s.SkyboxUp = &quot;http://www.roblox.com/asset/?id=&quot;..skyboxID
+game.Lighting.TimeOfDay = 12
+end
+
+setskybox.MouseButton1Down:connect(setskyboxClick)
+
+clearterrain = Instance.new(&quot;TextButton&quot;)
+clearterrain.Parent = page1
+clearterrain.Name = (&quot;Clear Terrain&quot;)
+clearterrain.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+clearterrain.Position = UDim2.new(0, 0, 0, 547)
+clearterrain.Size = UDim2.new(0, 100, 0, 20)
+clearterrain.Text = (&quot;Clear Terrain&quot;)
+clearterrain.Font = (&quot;SourceSans&quot;)
+clearterrain.FontSize = (&quot;Size14&quot;)
+clearterrain.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function clearterrainClick()
+game.Workspace.Terrain:Clear()
+end
+
+clearterrain.MouseButton1Down:connect(clearterrainClick)
+
+unanchorall = Instance.new(&quot;TextButton&quot;)
+unanchorall.Parent = page1
+unanchorall.Name = (&quot;Unanchor All&quot;)
+unanchorall.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+unanchorall.Position = UDim2.new(0, 0, 0, 526)
+unanchorall.Size = UDim2.new(0, 100, 0, 20)
+unanchorall.Text = (&quot;Unanchor All&quot;)
+unanchorall.Font = (&quot;SourceSans&quot;)
+unanchorall.FontSize = (&quot;Size14&quot;)
+unanchorall.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function unanchorallClick()
+function exPro(root)
+for _, v in pairs(root:GetChildren()) do
+if v:IsA(&quot;BasePart&quot;) then
+v.Material = &quot;Plastic&quot;
+v.Transparency = 0
+v.Anchored = false
+v.Locked = false
+end
+exPro(v)
+end
+end
+function asdf(root)
+for _, v in pairs(root:GetChildren()) do
+asdf(v)
+end
+end
+exPro(game.Workspace)
+asdf(game.Workspace)
+end
+
+unanchorall.MouseButton1Down:connect(unanchorallClick)
+
+createbaseplate = Instance.new(&quot;TextButton&quot;)
+createbaseplate.Parent = page1
+createbaseplate.Name = (&quot;Create Baseplate&quot;)
+createbaseplate.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+createbaseplate.Position = UDim2.new(0, 0, 0, 505)
+createbaseplate.Size = UDim2.new(0, 100, 0, 20)
+createbaseplate.Text = (&quot;Create Baseplate&quot;)
+createbaseplate.Font = (&quot;SourceSans&quot;)
+createbaseplate.FontSize = (&quot;Size14&quot;)
+createbaseplate.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function createbaseplateClick()
+local pt = Instance.new(&quot;Part&quot;)
+pt.BrickColor = BrickColor.new(&quot;Silver&quot;)
+pt.Anchored = true
+pt.CanCollide = true
+pt.BottomSurface = &quot;Weld&quot;
+pt.Parent = workspace
+pt.Name = (math.random(1,1000000))
+pt.Size = Vector3.new(1000, 1, 1000)
+end
+
+createbaseplate.MouseButton1Down:connect(createbaseplateClick)
+
+removeadmin = Instance.new(&quot;TextButton&quot;)
+removeadmin.Parent = page1
+removeadmin.Name = (&quot;Remove Admin&quot;)
+removeadmin.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+removeadmin.Position = UDim2.new(0, 0, 0, 442)
+removeadmin.Size = UDim2.new(0, 100, 0, 20)
+removeadmin.Text = (&quot;Remove Admin&quot;)
+removeadmin.Font = (&quot;SourceSans&quot;)
+removeadmin.FontSize = (&quot;Size14&quot;)
+removeadmin.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function removeadminClick()
+game.Workspace[&quot;Kohl&apos;s Admin Commands V2&quot;]:Destroy()
+end
+
+removeadmin.MouseButton1Down:connect(removeadminClick)
+
+apoctroll = Instance.new(&quot;TextButton&quot;)
+apoctroll.Parent = page1
+apoctroll.Name = (&quot;Apoc Troll&quot;)
+apoctroll.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+apoctroll.Position = UDim2.new(0, 0, 0, 421)
+apoctroll.Size = UDim2.new(0, 100, 0, 20)
+apoctroll.Text = (&quot;Apoc Troll&quot;)
+apoctroll.Font = (&quot;SourceSans&quot;)
+apoctroll.FontSize = (&quot;Size14&quot;)
+apoctroll.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function apoctrollClick()
+ds = CFrame.new(game.Players.LocalPlayer.Character.Head.Position)
+wait()
+for i,v in pairs(game.Players:GetChildren()) do
+if v.Name == game.Players.LocalPlayer.Name then
+else
+v.Character.Torso.CFrame = ds * CFrame.new(math.random(0,50),0,math.random(0,50))
+v.Character:BreakJoints()
+end
+end
+end
+
+apoctroll.MouseButton1Down:connect(apoctrollClick)
+
+brickspam = Instance.new(&quot;TextButton&quot;)
+brickspam.Parent = page1
+brickspam.Name = (&quot;Brick Spam&quot;)
+brickspam.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+brickspam.Position = UDim2.new(0, 0, 0, 400)
+brickspam.Size = UDim2.new(0, 100, 0, 20)
+brickspam.Text = (&quot;Brick Spam&quot;)
+brickspam.Font = (&quot;SourceSans&quot;)
+brickspam.FontSize = (&quot;Size14&quot;)
+brickspam.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function brickspamClick()
+local brick = Instance.new(&quot;Part&quot;)
+while true do
+local b = brick:clone()
+b.Parent = game.Workspace
+if game.Workspace[playername100] ~= nil then
+local mainpos = game.Workspace[playername100].Head.Position
+b.Position = Vector3.new(mainpos.x, mainpos.y +3, mainpos.z)
+wait()
+end
+end
+end
+
+brickspam.MouseButton1Down:connect(brickspamClick)
+
+knife = Instance.new(&quot;TextButton&quot;)
+knife.Parent = page1
+knife.Name = (&quot;Knife&quot;)
+knife.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+knife.Position = UDim2.new(0, 101, 0, 568)
+knife.Size = UDim2.new(0, 100, 0, 20)
+knife.Text = (&quot;Knife&quot;)
+knife.Font = (&quot;SourceSans&quot;)
+knife.FontSize = (&quot;Size14&quot;)
+knife.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function knifeClick()
+game:GetObjects(&quot;rbxassetid://92001561&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+knife.MouseButton1Down:connect(knifeClick)
+
+setwalkspeed = Instance.new(&quot;TextButton&quot;)
+setwalkspeed.Parent = page1
+setwalkspeed.Name = (&quot;Set Walkspeed&quot;)
+setwalkspeed.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+setwalkspeed.Position = UDim2.new(0, 202, 0, 568)
+setwalkspeed.Size = UDim2.new(0, 100, 0, 20)
+setwalkspeed.Text = (&quot;Set Walkspeed&quot;)
+setwalkspeed.Font = (&quot;SourceSans&quot;)
+setwalkspeed.FontSize = (&quot;Size14&quot;)
+setwalkspeed.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function setwalkspeedClick()
+walkspeed = walkspeedbox.Text
+game.Workspace[playername100].Humanoid.WalkSpeed = walkspeed
+end
+
+setwalkspeed.MouseButton1Down:connect(setwalkspeedClick)
+
+remsoadmin = Instance.new(&quot;TextButton&quot;)
+remsoadmin.Parent = page1
+remsoadmin.Name = (&quot;Remso Admin&quot;)
+remsoadmin.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+remsoadmin.Position = UDim2.new(0, 101, 0, 547)
+remsoadmin.Size = UDim2.new(0, 100, 0, 20)
+remsoadmin.Text = (&quot;Remso Admin&quot;)
+remsoadmin.Font = (&quot;SourceSans&quot;)
+remsoadmin.FontSize = (&quot;Size14&quot;)
+remsoadmin.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function remsoadminClick()
+str_srce = &quot;143944387&quot; loadstring(game:GetObjects(&quot;rbxassetid://&quot;..str_srce)[1].Source)()
+end
+
+remsoadmin.MouseButton1Down:connect(remsoadminClick)
+
+antirobloxian = Instance.new(&quot;TextButton&quot;)
+antirobloxian.Parent = page1
+antirobloxian.Name = (&quot;Anti-Robloxian&quot;)
+antirobloxian.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+antirobloxian.Position = UDim2.new(0, 101, 0, 442)
+antirobloxian.Size = UDim2.new(0, 100, 0, 20)
+antirobloxian.Text = (&quot;Anti-Robloxian&quot;)
+antirobloxian.Font = (&quot;SourceSans&quot;)
+antirobloxian.FontSize = (&quot;Size14&quot;)
+antirobloxian.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function antirobloxianClick()
+arstudsval.Value = arstudsbox.Text
+local Player = game.Players.LocalPlayer
+while true do
+dist = arstudsval.Value
+local distance = dist
+if Player then
+c = game.Players:GetChildren()
+for i = 1, #c do
+if c[i].Name ~= Player.Name then
+if c[i]:DistanceFromCharacter(game.Workspace[Player.Name].Torso.Position) &lt;= distance then
+c[i].Character:BreakJoints()
+c2 = c[i].Character:GetChildren()
+for i2 =1, #c2 do
+if c2[i2]:IsA(&quot;BasePart&quot;) then
+Instance.new(&quot;Fire&quot;, c2[i2])
+end end end end end end wait() end
+end
+
+antirobloxian.MouseButton1Down:connect(antirobloxianClick)
+
+headshake = Instance.new(&quot;TextButton&quot;)
+headshake.Parent = page1
+headshake.Name = (&quot;Head Shake&quot;)
+headshake.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+headshake.Position = UDim2.new(0, 101, 0, 421)
+headshake.Size = UDim2.new(0, 100, 0, 20)
+headshake.Text = (&quot;Head Shake&quot;)
+headshake.Font = (&quot;SourceSans&quot;)
+headshake.FontSize = (&quot;Size14&quot;)
+headshake.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function headshakeClick()
+for X = 1, math.huge, 0.2 do 
+wait() 
+game.Workspace[playername100].Torso.Neck.C0 = CFrame.new(math.sin(X) / 2,1.5,0) 
+game.Workspace[playername100].Torso.Neck.C1 = CFrame.new(0,0,0) 
+end 
+
+
+for X = 1, math.huge, 0.1 do 
+wait() 
+game.Workspace[playername100].Torso.Neck.C0 = CFrame.new(0,1.5,0) * CFrame.fromAxisAngle(Vector3.new(0,1,0), X) 
+game.Workspace[playername100].Torso.Neck.C1 = CFrame.new(0,0,0) 
+end 
+
+
+
+
+for _,c in pairs(game.Players:GetChildren()) do
+&#9;c.Character.Head.Mesh.Scale = Vector3.new(100, 100, 100)
+end
+
+
+
+for _,c in pairs(game.Players:GetChildren()) do
+&#9;c.Character.Head.Mesh.Scale = Vector3.new(1.25, 1.25, 1.25)
+end
+end
+
+headshake.MouseButton1Down:connect(headshakeClick)
+
+xadmin = Instance.new(&quot;TextButton&quot;)
+xadmin.Parent = page1
+xadmin.Name = (&quot;X Admin&quot;)
+xadmin.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+xadmin.Position = UDim2.new(0, 101, 0, 400)
+xadmin.Size = UDim2.new(0, 100, 0, 20)
+xadmin.Text = (&quot;X Admin&quot;)
+xadmin.Font = (&quot;SourceSans&quot;)
+xadmin.FontSize = (&quot;Size14&quot;)
+xadmin.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function xadminClick()
+game:GetObjects(&quot;rbxassetid://149943200&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+xadmin.MouseButton1Down:connect(xadminClick)
+
+kool = Instance.new(&quot;TextButton&quot;)
+kool.Parent = page1
+kool.Name = (&quot;Dominus Ghost&quot;)
+kool.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+kool.Position = UDim2.new(0, 101, 0, 526)
+kool.Size = UDim2.new(0, 100, 0, 20)
+kool.Text = (&quot;Dominus Ghost&quot;)
+kool.Font = (&quot;SourceSans&quot;)
+kool.FontSize = (&quot;Size14&quot;)
+kool.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function koolClick()
+function nob(who,tra,hat)
+memememe=who.Character
+pcall(function()u=memememe[&quot;Body Colors&quot;]
+u.HeadColor=BrickColor.new(&quot;Black&quot;)
+u.LeftLegColor=BrickColor.new(&quot;Black&quot;)
+u.RightLegolor=BrickColor.new(&quot;Black&quot;)
+u.LeftArmColor=BrickColor.new(&quot;Black&quot;)
+u.TorsoColor=BrickColor.new(&quot;Black&quot;)
+u.RightArmColor=BrickColor.new(&quot;Black&quot;)
+end)
+pcall(function()memememe.Shirt:Destroy() memememe.Pants:Destroy() end)
+for i,v in pairs(memememe:GetChildren()) do
+if v:IsA(&quot;BasePart&quot;) then
+v.Transparency=tra
+if v.Name==&quot;HumanoidRootPart&quot; or v.Name==&quot;Head&quot; then
+v.Transparency=1
+end
+wait()
+v.BrickColor=BrickColor.new(&quot;Black&quot;)
+elseif v:IsA(&quot;Hat&quot;) then
+v:Destroy()
+end
+end
+xx=game:service(&quot;InsertService&quot;):LoadAsset(hat)
+xy=game:service(&quot;InsertService&quot;):LoadAsset(47433)[&quot;LinkedSword&quot;]
+xy.Parent=who.Backpack
+for a,hat in pairs(xx:children()) do
+hat.Parent=memememe
+end
+xx:Destroy()
+h=who.Character.Humanoid
+h.MaxHealth=50000
+wait(1.5)
+h.Health=50000
+h.WalkSpeed=32
+end
+nob(game.Players.LocalPlayer,0.6,21070012)
+end
+
+kool.MouseButton1Down:connect(koolClick)
+
+changename = Instance.new(&quot;TextButton&quot;)
+changename.Parent = page1
+changename.Name = (&quot;Change Name&quot;)
+changename.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+changename.Position = UDim2.new(0, 101, 0, 505)
+changename.Size = UDim2.new(0, 100, 0, 20)
+changename.Text = (&quot;Change Name&quot;)
+changename.Font = (&quot;SourceSans&quot;)
+changename.FontSize = (&quot;Size14&quot;)
+changename.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+firsttime = true
+
+function changenameClick()
+name = namebox.Text
+if firsttime == true then
+local You = playername100 local head = workspace[You].Head:Clone() local model = Instance.new(&quot;Model&quot;,workspace) local humanoid = Instance.new(&quot;Humanoid&quot;,model) head.Parent = model model.Name = name modelname = model.Name humanoid.MaxHealth = 0 local w = Instance.new(&quot;Weld&quot;,model) w.Part0,w.Part1 = workspace[You].Head,head
+firsttime = false else
+local model = game.Workspace[modelname] model.Name = name modelname = model.Name 
+end
+end
+
+changename.MouseButton1Down:connect(changenameClick)
+
+orb = Instance.new(&quot;TextButton&quot;)
+orb.Parent = page1
+orb.Name = (&quot;Orb&quot;)
+orb.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+orb.Position = UDim2.new(0, 202, 0, 484)
+orb.Size = UDim2.new(0, 100, 0, 20)
+orb.Text = (&quot;Orb&quot;)
+orb.Font = (&quot;SourceSans&quot;)
+orb.FontSize = (&quot;Size14&quot;)
+orb.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function orbClick()
+game:GetObjects(&quot;rbxassetid://137285524&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+orb.MouseButton1Down:connect(orbClick)
+
+lightsaber = Instance.new(&quot;TextButton&quot;)
+lightsaber.Parent = page1
+lightsaber.Name = (&quot;Lightsaber&quot;)
+lightsaber.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+lightsaber.Position = UDim2.new(0, 202, 0, 463)
+lightsaber.Size = UDim2.new(0, 100, 0, 20)
+lightsaber.Text = (&quot;Lightsaber&quot;)
+lightsaber.Font = (&quot;SourceSans&quot;)
+lightsaber.FontSize = (&quot;Size14&quot;)
+lightsaber.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function lightsaberClick()
+game:GetObjects(&quot;rbxassetid://137264892&quot;)[1].Parent=game.Players.LocalPlayer.Backpack&#9;
+end
+
+lightsaber.MouseButton1Down:connect(lightsaberClick)
+
+masterhand = Instance.new(&quot;TextButton&quot;)
+masterhand.Parent = page1
+masterhand.Name = (&quot;Master Hand&quot;)
+masterhand.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+masterhand.Position = UDim2.new(0, 101, 0, 379)
+masterhand.Size = UDim2.new(0, 100, 0, 20)
+masterhand.Text = (&quot;Master Hand&quot;)
+masterhand.Font = (&quot;SourceSans&quot;)
+masterhand.FontSize = (&quot;Size14&quot;)
+masterhand.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function masterhandClick()
+game:GetObjects(&quot;rbxassetid://136424786&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+masterhand.MouseButton1Down:connect(masterhandClick)
+
+strobe = Instance.new(&quot;TextButton&quot;)
+strobe.Parent = page1
+strobe.Name = (&quot;5tr0b3&quot;)
+strobe.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+strobe.Position = UDim2.new(0, 202, 0, 442)
+strobe.Size = UDim2.new(0, 100, 0, 20)
+strobe.Text = (&quot;5tr0b3&quot;)
+strobe.Font = (&quot;SourceSans&quot;)
+strobe.FontSize = (&quot;Size14&quot;)
+strobe.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function strobeClick()
+game:GetObjects(&quot;rbxassetid://149946328&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+strobe.MouseButton1Down:connect(strobeClick)
+
+atlas = Instance.new(&quot;TextButton&quot;)
+atlas.Parent = page1
+atlas.Name = (&quot;Atlas Sword&quot;)
+atlas.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+atlas.Position = UDim2.new(0, 202, 0, 421)
+atlas.Size = UDim2.new(0, 100, 0, 20)
+atlas.Text = (&quot;Atlas Sword&quot;)
+atlas.Font = (&quot;SourceSans&quot;)
+atlas.FontSize = (&quot;Size14&quot;)
+atlas.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function atlasClick()
+game:GetObjects(&quot;rbxassetid://149945362&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+atlas.MouseButton1Down:connect(atlasClick)
+
+cba = Instance.new(&quot;TextButton&quot;)
+cba.Parent = page1
+cba.Name = (&quot;CBA Admin&quot;)
+cba.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+cba.Position = UDim2.new(0, 202, 0, 400)
+cba.Size = UDim2.new(0, 100, 0, 20)
+cba.Text = (&quot;CBA Admin&quot;)
+cba.Font = (&quot;SourceSans&quot;)
+cba.FontSize = (&quot;Size14&quot;)
+cba.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function cbaClick()
+game:GetObjects(&quot;rbxassetid://149944881&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+cba.MouseButton1Down:connect(cbaClick)
+
+d33k = Instance.new(&quot;TextButton&quot;)
+d33k.Parent = page1
+d33k.Name = (&quot;d33k Admin&quot;)
+d33k.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+d33k.Position = UDim2.new(0, 202, 0, 379)
+d33k.Size = UDim2.new(0, 100, 0, 20)
+d33k.Text = (&quot;d33k Admin&quot;)
+d33k.Font = (&quot;SourceSans&quot;)
+d33k.FontSize = (&quot;Size14&quot;)
+d33k.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function d33kClick()
+game:GetObjects(&quot;rbxassetid://149944494&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+d33k.MouseButton1Down:connect(d33kClick)
+
+eyelaser = Instance.new(&quot;TextButton&quot;)
+eyelaser.Parent = page2
+eyelaser.Name = (&quot;Eyelaser&quot;)
+eyelaser.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+eyelaser.Position = UDim2.new(0, 0, 0, 379)
+eyelaser.Size = UDim2.new(0, 100, 0, 20)
+eyelaser.Text = (&quot;Eyelaser&quot;)
+eyelaser.Font = (&quot;SourceSans&quot;)
+eyelaser.FontSize = (&quot;Size14&quot;)
+eyelaser.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function eyelaserClick()
+game:GetObjects(&quot;rbxassetid://142007482&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+eyelaser.MouseButton1Down:connect(eyelaserClick)
+
+fencing = Instance.new(&quot;TextButton&quot;)
+fencing.Parent = page2
+fencing.Name = (&quot;Fencing Restore&quot;)
+fencing.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+fencing.Position = UDim2.new(0, 0, 0, 400)
+fencing.Size = UDim2.new(0, 100, 0, 20)
+fencing.Text = (&quot;Fencing Restore&quot;)
+fencing.Font = (&quot;SourceSans&quot;)
+fencing.FontSize = (&quot;Size14&quot;)
+fencing.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function fencingClick()
+str_srce = &quot;123116009&quot; loadstring(game:GetObjects(&quot;rbxassetid://&quot;..str_srce)[1].Source)()
+end
+
+fencing.MouseButton1Down:connect(fencingClick)
+
+infinity = Instance.new(&quot;TextButton&quot;)
+infinity.Parent = page2
+infinity.Name = (&quot;broken&quot;)
+infinity.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+infinity.Position = UDim2.new(0, 0, 0, 421)
+infinity.Size = UDim2.new(0, 100, 0, 20)
+infinity.Text = (&quot;broken&quot;)
+infinity.Font = (&quot;SourceSans&quot;)
+infinity.FontSize = (&quot;Size14&quot;)
+infinity.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function infinityClick()
+
+end
+
+infinity.MouseButton1Down:connect(infinityClick)
+
+kohls = Instance.new(&quot;TextButton&quot;)
+kohls.Parent = page2
+kohls.Name = (&quot;Kohl&apos;s Admin&quot;)
+kohls.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+kohls.Position = UDim2.new(0, 0, 0, 442)
+kohls.Size = UDim2.new(0, 100, 0, 20)
+kohls.Text = (&quot;Kohl&apos;s Admin&quot;)
+kohls.Font = (&quot;SourceSans&quot;)
+kohls.FontSize = (&quot;Size14&quot;)
+kohls.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function kohlsClick()
+game:GetObjects(&quot;rbxassetid://157676089&quot;)[1].Parent=game.Workspace
+end
+
+kohls.MouseButton1Down:connect(kohlsClick)
+
+staff = Instance.new(&quot;TextButton&quot;)
+staff.Parent = page2
+staff.Name = (&quot;Staff&quot;)
+staff.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+staff.Position = UDim2.new(0, 0, 0, 463)
+staff.Size = UDim2.new(0, 100, 0, 20)
+staff.Text = (&quot;Staff&quot;)
+staff.Font = (&quot;SourceSans&quot;)
+staff.FontSize = (&quot;Size14&quot;)
+staff.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function staffClick()
+game:GetObjects(&quot;rbxassetid://149941868&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+staff.MouseButton1Down:connect(staffClick)
+
+wings = Instance.new(&quot;TextButton&quot;)
+wings.Parent = page2
+wings.Name = (&quot;Wings&quot;)
+wings.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+wings.Position = UDim2.new(0, 0, 0, 484)
+wings.Size = UDim2.new(0, 100, 0, 20)
+wings.Text = (&quot;Wings&quot;)
+wings.Font = (&quot;SourceSans&quot;)
+wings.FontSize = (&quot;Size14&quot;)
+wings.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function wingsClick()
+game:GetObjects(&quot;rbxassetid://136322458&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+wings.MouseButton1Down:connect(wingsClick)
+
+silent = Instance.new(&quot;TextButton&quot;)
+silent.Parent = page2
+silent.Name = (&quot;Silent Executor&quot;)
+silent.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+silent.Position = UDim2.new(0, 0, 0, 505)
+silent.Size = UDim2.new(0, 100, 0, 20)
+silent.Text = (&quot;Silent Executor&quot;)
+silent.Font = (&quot;SourceSans&quot;)
+silent.FontSize = (&quot;Size14&quot;)
+silent.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function silentClick()
+loadstring(game:GetObjects(&quot;rbxassetid://138660278&quot;)[1].Source)()
+end
+
+silent.MouseButton1Down:connect(silentClick)
+
+laser = Instance.new(&quot;TextButton&quot;)
+laser.Parent = page2
+laser.Name = (&quot;Laser Rifle&quot;)
+laser.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+laser.Position = UDim2.new(0, 0, 0, 526)
+laser.Size = UDim2.new(0, 100, 0, 20)
+laser.Text = (&quot;Laser Rifle&quot;)
+laser.Font = (&quot;SourceSans&quot;)
+laser.FontSize = (&quot;Size14&quot;)
+laser.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function laserClick()
+game:GetObjects(&quot;rbxassetid://140411727&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+laser.MouseButton1Down:connect(laserClick)
+
+insert = Instance.new(&quot;TextButton&quot;)
+insert.Parent = page2
+insert.Name = (&quot;Insert Tool&quot;)
+insert.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+insert.Position = UDim2.new(0, 0, 0, 547)
+insert.Size = UDim2.new(0, 100, 0, 20)
+insert.Text = (&quot;Insert Tool&quot;)
+insert.Font = (&quot;SourceSans&quot;)
+insert.FontSize = (&quot;Size14&quot;)
+insert.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function insertClick()
+game:GetObjects(&quot;rbxassetid://73504704&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+insert.MouseButton1Down:connect(insertClick)
+
+techno = Instance.new(&quot;TextButton&quot;)
+techno.Parent = page2
+techno.Name = (&quot;Techno Gauntlet&quot;)
+techno.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+techno.Position = UDim2.new(0, 0, 0, 568)
+techno.Size = UDim2.new(0, 100, 0, 20)
+techno.Text = (&quot;Techno Gauntlet&quot;)
+techno.Font = (&quot;SourceSans&quot;)
+techno.FontSize = (&quot;Size14&quot;)
+techno.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function technoClick()
+game:GetObjects(&quot;rbxassetid://142496704&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+techno.MouseButton1Down:connect(technoClick)
+
+spider = Instance.new(&quot;TextButton&quot;)
+spider.Parent = page2
+spider.Name = (&quot;Spider&quot;)
+spider.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+spider.Position = UDim2.new(0, 101, 0, 379)
+spider.Size = UDim2.new(0, 100, 0, 20)
+spider.Text = (&quot;Spider&quot;)
+spider.Font = (&quot;SourceSans&quot;)
+spider.FontSize = (&quot;Size14&quot;)
+spider.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function spiderClick()
+game:GetObjects(&quot;rbxassetid://137265181&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+spider.MouseButton1Down:connect(spiderClick)
+
+decal = Instance.new(&quot;TextButton&quot;)
+decal.Parent = page2
+decal.Name = (&quot;Decal Spam&quot;)
+decal.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+decal.Position = UDim2.new(0, 101, 0, 400)
+decal.Size = UDim2.new(0, 100, 0, 20)
+decal.Text = (&quot;Decal Spam&quot;)
+decal.Font = (&quot;SourceSans&quot;)
+decal.FontSize = (&quot;Size14&quot;)
+decal.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function decalClick()
+decalID = skyboxidbox.Text
+function exPro(root)
+for _, v in pairs(root:GetChildren()) do
+if v:IsA(&quot;Decal&quot;) and v.Texture ~= &quot;http://www.roblox.com/asset/?id=&quot;..decalID then
+v.Parent = nil
+elseif v:IsA(&quot;BasePart&quot;) then
+v.Material = &quot;Plastic&quot;
+v.Transparency = 0
+local One = Instance.new(&quot;Decal&quot;, v)
+local Two = Instance.new(&quot;Decal&quot;, v)
+local Three = Instance.new(&quot;Decal&quot;, v)
+local Four = Instance.new(&quot;Decal&quot;, v)
+local Five = Instance.new(&quot;Decal&quot;, v)
+local Six = Instance.new(&quot;Decal&quot;, v)
+One.Texture = &quot;http://www.roblox.com/asset/?id=&quot;..decalID
+Two.Texture = &quot;http://www.roblox.com/asset/?id=&quot;..decalID
+Three.Texture = &quot;http://www.roblox.com/asset/?id=&quot;..decalID
+Four.Texture = &quot;http://www.roblox.com/asset/?id=&quot;..decalID
+Five.Texture = &quot;http://www.roblox.com/asset/?id=&quot;..decalID
+Six.Texture = &quot;http://www.roblox.com/asset/?id=&quot;..decalID
+One.Face = &quot;Front&quot;
+Two.Face = &quot;Back&quot;
+Three.Face = &quot;Right&quot;
+Four.Face = &quot;Left&quot;
+Five.Face = &quot;Top&quot;
+Six.Face = &quot;Bottom&quot;
+end
+exPro(v)
+end
+end
+function asdf(root)
+for _, v in pairs(root:GetChildren()) do
+asdf(v)
+end
+end
+exPro(game.Workspace)
+asdf(game.Workspace)
+end
+
+decal.MouseButton1Down:connect(decalClick)
+
+forcetele = Instance.new(&quot;TextButton&quot;)
+forcetele.Parent = page2
+forcetele.Name = (&quot;Force Teleport&quot;)
+forcetele.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+forcetele.Position = UDim2.new(0, 101, 0, 421)
+forcetele.Size = UDim2.new(0, 100, 0, 20)
+forcetele.Text = (&quot;Force Teleport&quot;)
+forcetele.Font = (&quot;SourceSans&quot;)
+forcetele.FontSize = (&quot;Size14&quot;)
+forcetele.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function forceteleClick()
+placeID = forcetpbox.Text
+hax = [[for i,v in pairs(game.Players:GetChildren()) do
+game:GetService&apos;TeleportService&apos;:Teleport(]]..placeID..[[,v.Character)
+end
+]]
+local x = Workspace[&quot;Kohl&apos;s Admin Commands V2&quot;].ScriptBase
+x.Code.Value = hax
+wait()
+x.Disabled = false
+end
+
+forcetele.MouseButton1Down:connect(forceteleClick)
+
+disco = Instance.new(&quot;TextButton&quot;)
+disco.Parent = page2
+disco.Name = (&quot;Disco&quot;)
+disco.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+disco.Position = UDim2.new(0, 101, 0, 442)
+disco.Size = UDim2.new(0, 100, 0, 20)
+disco.Text = (&quot;Disco&quot;)
+disco.Font = (&quot;SourceSans&quot;)
+disco.FontSize = (&quot;Size14&quot;)
+disco.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function discoClick()
+while wait() do
+for _, v in pairs(Workspace:GetChildren()) do
+if v:IsA(&quot;BasePart&quot;) then
+v.BrickColor = BrickColor.Random()
+end
+end
+game.Lighting.Ambient = Color3.new(math.random(), math.random(), math.random()); game.Lighting.ShadowColor = Color3.new(math.random(), math.random(), math.random()); game.Lighting.ColorShift_Bottom = Color3.new(math.random(), math.random(), math.random()); game.Lighting.ColorShift_Top = Color3.new(math.random(), math.random(), math.random()); game.Lighting.Brightness = 1 / math.random(1, 10); game.Lighting.FogColor = Color3.new(math.random(), math.random(), math.random()); game.Lighting:SetMinutesAfterMidnight(game.Lighting:GetMinutesAfterMidnight() + 13)
+end
+end
+
+disco.MouseButton1Down:connect(discoClick)
+
+rekinball = Instance.new(&quot;TextButton&quot;)
+rekinball.Parent = page2
+rekinball.Name = (&quot;Wrecking Ball&quot;)
+rekinball.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+rekinball.Position = UDim2.new(0, 101, 0, 463)
+rekinball.Size = UDim2.new(0, 100, 0, 20)
+rekinball.Text = (&quot;Wrecking Ball&quot;)
+rekinball.Font = (&quot;SourceSans&quot;)
+rekinball.FontSize = (&quot;Size14&quot;)
+rekinball.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function rekinballClick()
+loadstring(game:GetObjects(&quot;rbxassetid://141303287&quot;)[1].Source)()
+end
+
+rekinball.MouseButton1Down:connect(rekinballClick)
+
+nilizer = Instance.new(&quot;TextButton&quot;)
+nilizer.Parent = page2
+nilizer.Name = (&quot;Nilizer&quot;)
+nilizer.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+nilizer.Position = UDim2.new(0, 101, 0, 484)
+nilizer.Size = UDim2.new(0, 100, 0, 20)
+nilizer.Text = (&quot;Nilizer&quot;)
+nilizer.Font = (&quot;SourceSans&quot;)
+nilizer.FontSize = (&quot;Size14&quot;)
+nilizer.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function nilizerClick()
+game:GetObjects(&quot;rbxassetid://142125914&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+nilizer.MouseButton1Down:connect(nilizerClick)
+
+laggui = Instance.new(&quot;TextButton&quot;)
+laggui.Parent = page2
+laggui.Name = (&quot;Lag Gui&quot;)
+laggui.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+laggui.Position = UDim2.new(0, 101, 0, 505)
+laggui.Size = UDim2.new(0, 100, 0, 20)
+laggui.Text = (&quot;Lag Gui&quot;)
+laggui.Font = (&quot;SourceSans&quot;)
+laggui.FontSize = (&quot;Size14&quot;)
+laggui.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function lagguiClick()
+whoownit = game.Players.LocalPlayer
+gui = Instance.new(&quot;ScreenGui&quot;)
+gui.Parent = whoownit.PlayerGui
+gui.Name = &quot;Lag&quot;
+
+pos = 135
+pos2 = 10
+pos3 = 0
+
+enabled = false
+
+button = Instance.new(&quot;TextButton&quot;)
+button.Parent = gui
+button.Size = UDim2.new(0, 100, 0, 30)
+button.Position = UDim2.new(0, 8, 0, pos)
+button.Text = &quot;Lag&quot;
+button.MouseButton1Click:connect(function()
+if enabled == false then 
+enabled = true
+local a = game.Players:GetChildren()
+red = 0
+green = 0.5
+blue = 0
+for i=1, #a do
+wait()
+pos2 = pos2 + 23
+if pos2 &gt;= 450 then
+pos3 = pos3 + 103
+pos2 = 33
+end
+if green &lt;= 0.9 then
+green = green + 0.46
+elseif green &gt;= 0.9 then
+green = green - 0.46
+end
+local bu = Instance.new(&quot;TextButton&quot;)
+bu.Parent = button
+bu.Size = UDim2.new(0, 100, 0, 20)
+bu.Position = UDim2.new(0, pos3, 0, pos2)
+bu.Text = a[i].Name
+bu.BackgroundTransparency = 1
+bu.TextTransparency = 1
+bu.BackgroundColor3 = Color3.new(red,green,blue)
+coroutine.resume(coroutine.create(function()
+for i=1, 3 do
+wait()
+bu.BackgroundTransparency = bu.BackgroundTransparency - 0.34
+bu.TextTransparency = bu.BackgroundTransparency
+end
+end))
+bu.MouseButton1Down:connect(function()
+local play = game.Players:findFirstChild(bu.Text)
+if play ~= nil then
+for i=1,3600 do
+Instance.new(&quot;HopperBin&quot;,play.Backpack).Name = &quot;:^)&quot;
+end
+wait()
+for i=1,3600 do
+Instance.new(&quot;HopperBin&quot;,play.Backpack).Name = &quot;:^)&quot;
+end
+wait()
+for i=1,3600 do
+Instance.new(&quot;HopperBin&quot;,play.Backpack).Name = &quot;:^)&quot;
+end
+wait()
+for i=1,13000 do
+Instance.new(&quot;HopperBin&quot;,play.Backpack).Name = &quot;:^)&quot;
+end
+wait()
+for i=1,3600 do
+Instance.new(&quot;HopperBin&quot;,play.Backpack).Name = &quot;:^)&quot;
+end
+bu.Text = &quot;Lagged!&quot;
+end
+end)
+end
+elseif enabled == true then
+enabled = false
+pos2 = 10
+pos3 = 0
+local o = button:GetChildren()
+for i=1, #o do
+wait()
+o[i]:remove()
+end
+end
+end)
+end
+
+laggui.MouseButton1Down:connect(lagguiClick)
+
+clearws = Instance.new(&quot;TextButton&quot;)
+clearws.Parent = page2
+clearws.Name = (&quot;Clear Workspace&quot;)
+clearws.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+clearws.Position = UDim2.new(0, 101, 0, 526)
+clearws.Size = UDim2.new(0, 100, 0, 20)
+clearws.Text = (&quot;Clear Workspace&quot;)
+clearws.Font = (&quot;SourceSans&quot;)
+clearws.FontSize = (&quot;Size14&quot;)
+clearws.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function clearwsClick()
+game.Workspace:ClearAllChildren()
+end
+
+clearws.MouseButton1Down:connect(clearwsClick)
+
+drawtool = Instance.new(&quot;TextButton&quot;)
+drawtool.Parent = page2
+drawtool.Name = (&quot;Draw Tool&quot;)
+drawtool.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+drawtool.Position = UDim2.new(0, 101, 0, 547)
+drawtool.Size = UDim2.new(0, 100, 0, 20)
+drawtool.Text = (&quot;Draw Tool&quot;)
+drawtool.Font = (&quot;SourceSans&quot;)
+drawtool.FontSize = (&quot;Size14&quot;)
+drawtool.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function drawtoolClick()
+loadstring(game:GetObjects(&quot;rbxassetid://96727044&quot;)[1].Source)()
+end
+
+drawtool.MouseButton1Down:connect(drawtoolClick)
+
+explorer = Instance.new(&quot;TextButton&quot;)
+explorer.Parent = page2
+explorer.Name = (&quot;Explorer&quot;)
+explorer.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+explorer.Position = UDim2.new(0, 101, 0, 568)
+explorer.Size = UDim2.new(0, 100, 0, 20)
+explorer.Text = (&quot;Explorer&quot;)
+explorer.Font = (&quot;SourceSans&quot;)
+explorer.FontSize = (&quot;Size14&quot;)
+explorer.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function explorerClick()
+loadstring(Game:GetObjects(&quot;rbxassetid://111532299&quot;)[1].Source)()
+end
+
+explorer.MouseButton1Down:connect(explorerClick)
+
+svest = Instance.new(&quot;TextButton&quot;)
+svest.Parent = page1
+svest.Name = (&quot;Suicide Vest&quot;)
+svest.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+svest.Position = UDim2.new(0, 202, 0, 505)
+svest.Size = UDim2.new(0, 100, 0, 20)
+svest.Text = (&quot;Suicide Vest&quot;)
+svest.Font = (&quot;SourceSans&quot;)
+svest.FontSize = (&quot;Size14&quot;)
+svest.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function svestClick()
+loadstring(Game:GetObjects(&quot;rbxassetid://142429056&quot;)[1].Source)()
+end
+
+svest.MouseButton1Down:connect(svestClick)
+
+songplay = Instance.new(&quot;TextButton&quot;)
+songplay.Parent = page1
+songplay.Name = (&quot;Song Player&quot;)
+songplay.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+songplay.Position = UDim2.new(0, 101, 0, 484)
+songplay.Size = UDim2.new(0, 100, 0, 20)
+songplay.Text = (&quot;Song Player&quot;)
+songplay.Font = (&quot;SourceSans&quot;)
+songplay.FontSize = (&quot;Size14&quot;)
+songplay.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function songplayClick()
+str_srce = &quot;142919613&quot; loadstring(game:GetObjects(&quot;rbxassetid://&quot;..str_srce)[1].Source)()
+end
+
+songplay.MouseButton1Down:connect(songplayClick)
+
+camball = Instance.new(&quot;TextButton&quot;)
+camball.Parent = page1
+camball.Name = (&quot;Camball&quot;)
+camball.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+camball.Position = UDim2.new(0, 101, 0, 463)
+camball.Size = UDim2.new(0, 100, 0, 20)
+camball.Text = (&quot;Camball&quot;)
+camball.Font = (&quot;SourceSans&quot;)
+camball.FontSize = (&quot;Size14&quot;)
+camball.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function camballClick()
+game:GetObjects(&quot;rbxassetid://149943697&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+camball.MouseButton1Down:connect(camballClick)
+
+hat = Instance.new(&quot;TextButton&quot;)
+hat.Parent = page2
+hat.Name = (&quot;Give Hat&quot;)
+hat.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+hat.Position = UDim2.new(0, 202, 0, 421)
+hat.Size = UDim2.new(0, 100, 0, 20)
+hat.Text = (&quot;Give Hat&quot;)
+hat.Font = (&quot;SourceSans&quot;)
+hat.FontSize = (&quot;Size14&quot;)
+hat.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function hatClick()
+playername100 = game.Players.LocalPlayer.Name
+hatid = hatbox.Text
+x = game:GetService(&quot;InsertService&quot;):LoadAsset(hatid) x.Parent = game.Workspace[playername100] x:makeJoints() x:MoveTo(game.Players.LocalPlayer.Character.Head.Position)
+end
+
+hat.MouseButton1Down:connect(hatClick)
+
+gear = Instance.new(&quot;TextButton&quot;)
+gear.Parent = page2
+gear.Name = (&quot;Give Gear&quot;)
+gear.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+gear.Position = UDim2.new(0, 202, 0, 442)
+gear.Size = UDim2.new(0, 100, 0, 20)
+gear.Text = (&quot;Give Gear&quot;)
+gear.Font = (&quot;SourceSans&quot;)
+gear.FontSize = (&quot;Size14&quot;)
+gear.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function gearClick()
+playername100 = game.Players.LocalPlayer.Name
+gearid = gearbox.Text
+x = game:GetService(&quot;InsertService&quot;):LoadAsset(gearid) x.Parent = game.Workspace x:makeJoints() x:MoveTo(game.Players.LocalPlayer.Character.Head.Position)
+end
+
+gear.MouseButton1Down:connect(gearClick)
+
+expl2 = Instance.new(&quot;TextButton&quot;)
+expl2.Parent = page2
+expl2.Name = (&quot;Explorer 2&quot;)
+expl2.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+expl2.Position = UDim2.new(0, 202, 0, 379)
+expl2.Size = UDim2.new(0, 100, 0, 20)
+expl2.Text = (&quot;Explorer 2&quot;)
+expl2.Font = (&quot;SourceSans&quot;)
+expl2.FontSize = (&quot;Size14&quot;)
+expl2.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function expl2Click()
+str_srce = &quot;143924441&quot; loadstring(game:GetObjects(&quot;rbxassetid://&quot;..str_srce)[1].Source)()
+end
+
+expl2.MouseButton1Down:connect(expl2Click)
+
+warhammer = Instance.new(&quot;TextButton&quot;)
+warhammer.Parent = page1
+warhammer.Name = (&quot;Warhammer&quot;)
+warhammer.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+warhammer.Position = UDim2.new(0, 0, 0, 484)
+warhammer.Size = UDim2.new(0, 100, 0, 20)
+warhammer.Text = (&quot;Warhammer&quot;)
+warhammer.Font = (&quot;SourceSans&quot;)
+warhammer.FontSize = (&quot;Size14&quot;)
+warhammer.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function warhammerClick()
+game:GetObjects(&quot;rbxassetid://149942862&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+warhammer.MouseButton1Down:connect(warhammerClick)
+
+flood = Instance.new(&quot;TextButton&quot;)
+flood.Parent = page1
+flood.Name = (&quot;Flood&quot;)
+flood.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+flood.Position = UDim2.new(0, 0, 0, 379)
+flood.Size = UDim2.new(0, 100, 0, 20)
+flood.Text = (&quot;Flood&quot;)
+flood.Font = (&quot;SourceSans&quot;)
+flood.FontSize = (&quot;Size14&quot;)
+flood.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function floodClick()
+Game.Workspace.Terrain:SetCells(Region3int16.new(Vector3int16.new(-100,-100,-100), Vector3int16.new(100,100,100)), 17, &quot;Solid&quot;, &quot;X&quot;)
+end
+
+flood.MouseButton1Down:connect(floodClick)
+
+scythe = Instance.new(&quot;TextButton&quot;)
+scythe.Parent = page2
+scythe.Name = (&quot;Scythe&quot;)
+scythe.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+scythe.Position = UDim2.new(0, 101, 0, 505)
+scythe.Size = UDim2.new(0, 100, 0, 20)
+scythe.Text = (&quot;Scythe&quot;)
+scythe.Font = (&quot;SourceSans&quot;)
+scythe.FontSize = (&quot;Size14&quot;)
+scythe.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function scytheClick()
+game:GetObjects(&quot;rbxassetid://149942448&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+scythe.MouseButton1Down:connect(scytheClick)
+
+minigun = Instance.new(&quot;TextButton&quot;)
+minigun.Parent = page1
+minigun.Name = (&quot;Minigun&quot;)
+minigun.BackgroundColor3 = Color3.new(255/255, 0/255, 0/255)
+minigun.Position = UDim2.new(0, 0, 0, 463)
+minigun.Size = UDim2.new(0, 100, 0, 20)
+minigun.Text = (&quot;Minigun&quot;)
+minigun.Font = (&quot;SourceSans&quot;)
+minigun.FontSize = (&quot;Size14&quot;)
+minigun.TextColor3 = Color3.new(0/255, 0/255, 0/255)
+
+function minigunClick()
+game:GetObjects(&quot;rbxassetid://140634024&quot;)[1].Parent=game.Players.LocalPlayer.Backpack
+end
+
+minigun.MouseButton1Down:connect(minigunClick)
+
+loadmsg = Instance.new(&quot;Message&quot;)
+loadmsg.Parent = game.Workspace
+loadmsg.Text = (&quot;c00lGui V&quot;..Version..&quot; has loaded.&quot;)
+wait(3)
+loadmsg:Remove()</ProtectedString>
+		</Properties>
+	</Item>
+</roblox>
