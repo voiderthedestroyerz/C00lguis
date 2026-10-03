@@ -1,0 +1,288 @@
+--Don't skid
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local c00lgui = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local page1 = Instance.new("Frame")
+local Skybox = Instance.new("TextButton")
+local DecalSpam = Instance.new("TextButton")
+local mesagE = Instance.new("TextButton")
+local HIINT = Instance.new("TextButton")
+local belboaardnotworkingnow = Instance.new("TextButton")
+local unanchor = Instance.new("TextButton")
+local creditsandshi = Instance.new("TextLabel")
+local closecuzwhynot = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+c00lgui.Name = "c00lgui"
+c00lgui.Parent = ScreenGui
+c00lgui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+c00lgui.BorderColor3 = Color3.fromRGB(255, 0, 4)
+c00lgui.BorderSizePixel = 3
+c00lgui.Position = UDim2.new(0, 0, 0.373248398, 0)
+c00lgui.Size = UDim2.new(0, 262, 0, 399)
+
+TextLabel.Parent = c00lgui
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.BorderSizePixel = 3
+TextLabel.Size = UDim2.new(0, 262, 0, 34)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "C00lgui Reborn by Voiderthedestroyer"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+page1.Name = "page1"
+page1.Parent = c00lgui
+page1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+page1.BorderColor3 = Color3.fromRGB(255, 0, 4)
+page1.BorderSizePixel = 3
+page1.Position = UDim2.new(0, 0, 0.0852130353, 0)
+page1.Size = UDim2.new(0, 262, 0, 364)
+
+Skybox.Name = "Skybox"
+Skybox.Parent = page1
+Skybox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Skybox.BorderColor3 = Color3.fromRGB(255, 0, 4)
+Skybox.BorderSizePixel = 3
+Skybox.Size = UDim2.new(0, 133, 0, 25)
+Skybox.Font = Enum.Font.SourceSans
+Skybox.Text = "Skybox"
+Skybox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Skybox.TextSize = 14.000
+Skybox.TextWrapped = true
+
+DecalSpam.Name = "DecalSpam"
+DecalSpam.Parent = page1
+DecalSpam.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DecalSpam.BorderColor3 = Color3.fromRGB(255, 0, 4)
+DecalSpam.BorderSizePixel = 3
+DecalSpam.Position = UDim2.new(0.492366403, 0, 0, 0)
+DecalSpam.Size = UDim2.new(0, 133, 0, 25)
+DecalSpam.Font = Enum.Font.SourceSans
+DecalSpam.Text = "Decal spam"
+DecalSpam.TextColor3 = Color3.fromRGB(255, 255, 255)
+DecalSpam.TextSize = 14.000
+DecalSpam.TextWrapped = true
+
+mesagE.Name = "mesagE"
+mesagE.Parent = page1
+mesagE.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+mesagE.BorderColor3 = Color3.fromRGB(255, 0, 4)
+mesagE.BorderSizePixel = 3
+mesagE.Position = UDim2.new(0, 0, 0.068681322, 0)
+mesagE.Size = UDim2.new(0, 133, 0, 25)
+mesagE.Font = Enum.Font.SourceSans
+mesagE.Text = "Message"
+mesagE.TextColor3 = Color3.fromRGB(255, 255, 255)
+mesagE.TextSize = 14.000
+mesagE.TextWrapped = true
+
+HIINT.Name = "HIINT"
+HIINT.Parent = page1
+HIINT.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HIINT.BorderColor3 = Color3.fromRGB(255, 0, 4)
+HIINT.BorderSizePixel = 3
+HIINT.Position = UDim2.new(0.492366403, 0, 0.068681322, 0)
+HIINT.Size = UDim2.new(0, 133, 0, 25)
+HIINT.Font = Enum.Font.SourceSans
+HIINT.Text = "Hint"
+HIINT.TextColor3 = Color3.fromRGB(255, 255, 255)
+HIINT.TextSize = 14.000
+HIINT.TextWrapped = true
+
+belboaardnotworkingnow.Name = "belboaard not working now"
+belboaardnotworkingnow.Parent = page1
+belboaardnotworkingnow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+belboaardnotworkingnow.BorderColor3 = Color3.fromRGB(255, 0, 4)
+belboaardnotworkingnow.BorderSizePixel = 3
+belboaardnotworkingnow.Position = UDim2.new(0, 0, 0.137362644, 0)
+belboaardnotworkingnow.Size = UDim2.new(0, 133, 0, 25)
+belboaardnotworkingnow.Font = Enum.Font.SourceSans
+belboaardnotworkingnow.Text = "billboard"
+belboaardnotworkingnow.TextColor3 = Color3.fromRGB(255, 255, 255)
+belboaardnotworkingnow.TextSize = 14.000
+belboaardnotworkingnow.TextWrapped = true
+
+unanchor.Name = "unanchor "
+unanchor.Parent = page1
+unanchor.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+unanchor.BorderColor3 = Color3.fromRGB(255, 0, 4)
+unanchor.BorderSizePixel = 3
+unanchor.Position = UDim2.new(0.492366403, 0, 0.137362644, 0)
+unanchor.Size = UDim2.new(0, 133, 0, 25)
+unanchor.Font = Enum.Font.SourceSans
+unanchor.Text = "unanchor all"
+unanchor.TextColor3 = Color3.fromRGB(255, 255, 255)
+unanchor.TextSize = 14.000
+unanchor.TextWrapped = true
+
+creditsandshi.Name = "credits and shi"
+creditsandshi.Parent = page1
+creditsandshi.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+creditsandshi.BorderColor3 = Color3.fromRGB(255, 0, 4)
+creditsandshi.BorderSizePixel = 3
+creditsandshi.Position = UDim2.new(0.335877866, 0, 0.222527474, 0)
+creditsandshi.Size = UDim2.new(0, 174, 0, 99)
+creditsandshi.Font = Enum.Font.SourceSans
+creditsandshi.Text = "This is all for now,give suggestions in thread or comments!Created by Voiderthedestroyer,inspired by LordMuhammad's FE c00lgui"
+creditsandshi.TextColor3 = Color3.fromRGB(255, 255, 255)
+creditsandshi.TextSize = 14.000
+creditsandshi.TextWrapped = true
+
+closecuzwhynot.Name = "close cuz why not"
+closecuzwhynot.Parent = c00lgui
+closecuzwhynot.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+closecuzwhynot.BorderColor3 = Color3.fromRGB(255, 0, 4)
+closecuzwhynot.BorderSizePixel = 3
+closecuzwhynot.Position = UDim2.new(-0.0152671756, 0, 0.999517977, 0)
+closecuzwhynot.Size = UDim2.new(0, 266, 0, 25)
+closecuzwhynot.Font = Enum.Font.SourceSans
+closecuzwhynot.Text = "Close"
+closecuzwhynot.TextColor3 = Color3.fromRGB(255, 255, 255)
+closecuzwhynot.TextSize = 14.000
+closecuzwhynot.TextWrapped = true
+
+-- Scripts:
+
+local function IHIVJA_fake_script() -- Skybox.Script 
+	local script = Instance.new('Script', Skybox)
+
+	--158118263
+	function click()
+		s = Instance.new("Sky")
+		s.Name = "Sky"
+		s.Parent = game.Lighting
+		s.SkyboxBk = "http://www.roblox.com/asset/?id=158118263"
+		s.SkyboxDn = "http://www.roblox.com/asset/?id=158118263"
+		s.SkyboxFt = "http://www.roblox.com/asset/?id=158118263"
+		s.SkyboxLf = "http://www.roblox.com/asset/?id=158118263"
+		s.SkyboxRt = "http://www.roblox.com/asset/?id=158118263"
+		s.SkyboxUp = "http://www.roblox.com/asset/?id=158118263"
+		game.Lighting.TimeOfDay = 12
+	
+	end
+	
+	script.Parent.MouseButton1Down:connect(click)
+end
+coroutine.wrap(IHIVJA_fake_script)()
+local function QBYEJY_fake_script() -- DecalSpam.Script 
+	local script = Instance.new('Script', DecalSpam)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local decalID = 158118263
+	
+		local function exPro(root)
+			for _, v in ipairs(root:GetChildren()) do
+				if v:IsA("Decal") and v.Texture ~= "rbxassetid://" .. decalID then
+					v:Destroy()
+				elseif v:IsA("BasePart") then
+					v.Material = Enum.Material.Plastic
+					v.Transparency = 0
+	
+					local faces = {
+						Enum.NormalId.Front,
+						Enum.NormalId.Back,
+						Enum.NormalId.Right,
+						Enum.NormalId.Left,
+						Enum.NormalId.Top,
+						Enum.NormalId.Bottom
+					}
+	
+					for _, face in ipairs(faces) do
+						local decal = Instance.new("Decal")
+						decal.Texture = "rbxassetid://" .. decalID
+						decal.Face = face
+						decal.Parent = v
+					end
+				end
+	
+				exPro(v)
+			end
+		end
+	
+		exPro(workspace)
+	end)
+end
+coroutine.wrap(QBYEJY_fake_script)()
+local function LAOXPW_fake_script() -- mesagE.Script 
+	local script = Instance.new('Script', mesagE)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local o = Instance.new("Message",workspace)
+		while true do
+			o.Text = "team c00lkidd is here to destroy da game [] join now"
+			wait(10)
+			o:Destroy()
+		end
+	end)
+end
+coroutine.wrap(LAOXPW_fake_script)()
+local function AUCBKTQ_fake_script() -- HIINT.Script 
+	local script = Instance.new('Script', HIINT)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local o = Instance.new("Hint",workspace)
+		while true do
+			o.Text = "team c00lkidd is here to destroy da game [] join now"
+			wait(10)
+			o:Destroy()
+		end
+	end)
+end
+coroutine.wrap(AUCBKTQ_fake_script)()
+local function JLCA_fake_script() -- belboaardnotworkingnow.Script 
+	local script = Instance.new('Script', belboaardnotworkingnow)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("im too lazy to do it sorry bro")
+	end)
+end
+coroutine.wrap(JLCA_fake_script)()
+local function EKNERO_fake_script() -- unanchor.Script 
+	local script = Instance.new('Script', unanchor)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		for i,v in pairs(game.Workspace:GetDescendants()) do
+			if v:IsA("BasePart") then	
+				v.Anchored = false
+			end
+		end
+	
+	
+		for i,v in pairs(game.ReplicatedStorage:GetDescendants()) do
+			if v:IsA("BasePart") then
+				v.Anchored = false
+			end
+		end
+	
+	
+		for i,v in pairs(game.ReplicatedFirst:GetDescendants()) do
+			if v:IsA("BasePart") then
+				v.Anchored = false
+			end
+		end
+	end)
+end
+coroutine.wrap(EKNERO_fake_script)()
+local function FHGM_fake_script() -- closecuzwhynot.LocalScript 
+	local script = Instance.new('LocalScript', closecuzwhynot)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.page1.Visible = not script.Parent.Parent.page1.Visible
+	end)
+	
+end
+coroutine.wrap(FHGM_fake_script)()
