@@ -28,6 +28,8 @@ Original C00lGui — untrusted
 
 Original C00lGui — trusted
 
-C00lGui V2.5 — By LordMuhammad
+C00lGui V2.5 — by LordMuhammad
+
+C00lGui V2.1 — by LordMuhammad
 
 Note: This repository is intended as an archive/collection of C00lGui versions. Credit is given where the original author or uploader is known.
