@@ -32,4 +32,6 @@ C00lGui V2.5 — by LordMuhammad
 
 C00lGui V2.1 — by LordMuhammad
 
+C00lgui JJSploit — by SCPHack12 
+
 Note: This repository is intended as an archive/collection of C00lGui versions. Credit is given where the original author or uploader is known.
