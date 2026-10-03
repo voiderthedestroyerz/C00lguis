@@ -40,4 +40,6 @@ C00lGui rebirthed v1 — by Blox1
 
 C00lgui Reborn RC7 (modified) Green edition —  by x007n7 and v3rx
 
+C00lGui V2 by —  VOIDERTHEDESTROYER
+
 Note: This repository is intended as an archive/collection of C00lGui versions. Credit is given where the original author or uploader is known.
