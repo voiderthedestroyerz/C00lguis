@@ -1,14 +1,31 @@
-Collection of all the c00lguis that I could find including mine
-C00lguis collected here:
+C00lGui Collection
+
+A collection of C00lguis that I could find, including my own version.
+
+Collected C00lguis
+
 C00lClan
-C00lclan V2
-C00lgui 0.5 Reborn by 007n7
-C00lgui by Verified
-C00lgui by VOIDERTHEDESTROYER Beta
-C00lgui by VOIDERTHEDESTROYER V1
-C00lgui F3X FE Bypass by ?
-C00lgui FE Reborn by Lordmuhammad
-C00lgui Revival by Hyperion
-C00lgui V6 uploaded by team8x8x8x8
-Original C00lGui(untrusted)
-Original C00lgui(trusted)
+
+C00lClan V2
+
+C00lGui 0.5 Reborn — by 007n7
+
+C00lGui — by Verified
+
+C00lGui Beta — by VOIDERTHEDESTROYER
+
+C00lGui V1 — by VOIDERTHEDESTROYER
+
+C00lGui F3X FE Bypass — author unknown
+
+C00lGui FE Reborn — by Lordmuhammad
+
+C00lGui Revival — by Hyperion
+
+C00lGui V6 — uploaded by team8x8x8x8
+
+Original C00lGui — untrusted
+
+Original C00lGui — trusted
+
+Note: This repository is intended as an archive/collection of C00lGui versions. Credit is given where the original author or uploader is known.
