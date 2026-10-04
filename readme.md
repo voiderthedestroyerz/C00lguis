@@ -20,7 +20,7 @@ C00lGui F3X FE Bypass — author unknown
 
 C00lGui FE Reborn — by Lordmuhammad
 
-C00lGui Revival — by Hyperion
+C00lGui Revival — by HyperionHax
 
 C00lGui V6 — uploaded by team8x8x8x8
 
@@ -40,6 +40,8 @@ C00lGui rebirthed v1 — by Blox1
 
 C00lgui Reborn RC7 (modified) Green edition —  by x007n7 and v3rx
 
-C00lGui V2 by —  VOIDERTHEDESTROYER
+C00lGui V2 by —  by VOIDERTHEDESTROYER
+
+C00lgui Special Edition — by HyperionHax
 
 Note: This repository is intended as an archive/collection of C00lGui versions. Credit is given where the original author or uploader is known.
