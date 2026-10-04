@@ -1,3 +1,5 @@
+To report bugs,or suggest c00lguis that should be added here,join the server on D.C or dm me @voiderthedestroyer on d.c
+
 C00lGui Collection
 
 A collection of C00lguis that I could find, including my own version.
