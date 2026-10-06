@@ -47,5 +47,6 @@ C00lGui V2 by —  by VOIDERTHEDESTROYER
 C00lgui Special Edition — by HyperionHax
 
 C00lgui V1.1(RBXM) — by 007n7
+C00lgui V3 — by VOIDERTHEDESTROYER
 
 Note: This repository is intended as an archive/collection of C00lGui versions. Credit is given where the original author or uploader is known.
