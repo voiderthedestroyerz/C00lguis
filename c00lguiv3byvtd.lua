@@ -681,7 +681,7 @@ TextLabel_2.TextWrapped = true
 
 -- Scripts:
 
-local function JRFVJ_fake_script() -- Skybox.Script 
+local function ULTNRN_fake_script() -- Skybox.Script 
 	local script = Instance.new('Script', Skybox)
 
 	--158118263
@@ -701,8 +701,8 @@ local function JRFVJ_fake_script() -- Skybox.Script
 	
 	script.Parent.MouseButton1Down:connect(click)
 end
-coroutine.wrap(JRFVJ_fake_script)()
-local function GVJVQNT_fake_script() -- DecalSpam.Script 
+coroutine.wrap(ULTNRN_fake_script)()
+local function UATY_fake_script() -- DecalSpam.Script 
 	local script = Instance.new('Script', DecalSpam)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -740,8 +740,8 @@ local function GVJVQNT_fake_script() -- DecalSpam.Script
 		exPro(workspace)
 	end)
 end
-coroutine.wrap(GVJVQNT_fake_script)()
-local function JPFG_fake_script() -- mesagE.Script 
+coroutine.wrap(UATY_fake_script)()
+local function XGFVW_fake_script() -- mesagE.Script 
 	local script = Instance.new('Script', mesagE)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -753,8 +753,8 @@ local function JPFG_fake_script() -- mesagE.Script
 		end
 	end)
 end
-coroutine.wrap(JPFG_fake_script)()
-local function DEXJBGF_fake_script() -- HIINT.Script 
+coroutine.wrap(XGFVW_fake_script)()
+local function SISQQKA_fake_script() -- HIINT.Script 
 	local script = Instance.new('Script', HIINT)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -766,8 +766,8 @@ local function DEXJBGF_fake_script() -- HIINT.Script
 		end
 	end)
 end
-coroutine.wrap(DEXJBGF_fake_script)()
-local function DSSHFSN_fake_script() -- billboard.Script 
+coroutine.wrap(SISQQKA_fake_script)()
+local function PMAXN_fake_script() -- billboard.Script 
 	local script = Instance.new('Script', billboard)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -794,8 +794,8 @@ local function DSSHFSN_fake_script() -- billboard.Script
 		f.TextYAlignment = "Bottom"
 	end)
 end
-coroutine.wrap(DSSHFSN_fake_script)()
-local function CFFFB_fake_script() -- unanchor.Script 
+coroutine.wrap(PMAXN_fake_script)()
+local function FAAFQKA_fake_script() -- unanchor.Script 
 	local script = Instance.new('Script', unanchor)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -820,8 +820,8 @@ local function CFFFB_fake_script() -- unanchor.Script
 		end
 	end)
 end
-coroutine.wrap(CFFFB_fake_script)()
-local function COOWJ_fake_script() -- lalolhub.LocalScript 
+coroutine.wrap(FAAFQKA_fake_script)()
+local function UVEAD_fake_script() -- lalolhub.LocalScript 
 	local script = Instance.new('LocalScript', lalolhub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -829,16 +829,16 @@ local function COOWJ_fake_script() -- lalolhub.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Obunga-666/Lalol-hub-without-hint/refs/heads/main/Lalol%20hub%20without%20hint"))()
 	end)
 end
-coroutine.wrap(COOWJ_fake_script)()
-local function WARQRXJ_fake_script() -- grabknife.LocalScript 
+coroutine.wrap(UVEAD_fake_script)()
+local function JYFNMT_fake_script() -- grabknife.LocalScript 
 	local script = Instance.new('LocalScript', grabknife)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Icalock/Server/refs/heads/main/Grab%20V4.txt", true))()
 	end)
 end
-coroutine.wrap(WARQRXJ_fake_script)()
-local function SYJIEST_fake_script() -- c00lify.Script 
+coroutine.wrap(JYFNMT_fake_script)()
+local function JZYUU_fake_script() -- c00lify.Script 
 	local script = Instance.new('Script', c00lify)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -888,8 +888,8 @@ local function SYJIEST_fake_script() -- c00lify.Script
 		hint.Parent = workspace
 	end)
 end
-coroutine.wrap(SYJIEST_fake_script)()
-local function GTUBIYM_fake_script() -- grabknifev1.Script 
+coroutine.wrap(JZYUU_fake_script)()
+local function PPVQ_fake_script() -- grabknifev1.Script 
 	local script = Instance.new('Script', grabknifev1)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1623,32 +1623,32 @@ local function GTUBIYM_fake_script() -- grabknifev1.Script
 		inform("Grab script loaded succesfully.",2)
 	end)
 end
-coroutine.wrap(GTUBIYM_fake_script)()
-local function RAQIFV_fake_script() -- flood.Script 
+coroutine.wrap(PPVQ_fake_script)()
+local function QRFAI_fake_script() -- flood.Script 
 	local script = Instance.new('Script', flood)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Workspace.Terrain:SetCells(Region3int16.new(Vector3int16.new(-100,-100,-100), Vector3int16.new(100,100,100)), 17, "Solid", "X")	
 	end)
 end
-coroutine.wrap(RAQIFV_fake_script)()
-local function QOFHAO_fake_script() -- clear.Script 
+coroutine.wrap(QRFAI_fake_script)()
+local function DTTCSX_fake_script() -- clear.Script 
 	local script = Instance.new('Script', clear)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Workspace.Terrain:Clear()
 	end)
 end
-coroutine.wrap(QOFHAO_fake_script)()
-local function MJNN_fake_script() -- flood_2.Script 
+coroutine.wrap(DTTCSX_fake_script)()
+local function ZATQMQN_fake_script() -- flood_2.Script 
 	local script = Instance.new('Script', flood_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent.reelfebipasc:Destroy()
 	end)
 end
-coroutine.wrap(MJNN_fake_script)()
-local function QNUIFQU_fake_script() -- TextButton.Script 
+coroutine.wrap(ZATQMQN_fake_script)()
+local function LWBGQD_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1656,8 +1656,8 @@ local function QNUIFQU_fake_script() -- TextButton.Script
 		script.Parent.Parent.Parent.page2.Visible = true
 	end)
 end
-coroutine.wrap(QNUIFQU_fake_script)()
-local function SAOCQ_fake_script() -- TextButton_2.Script 
+coroutine.wrap(LWBGQD_fake_script)()
+local function DFJL_fake_script() -- TextButton_2.Script 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1665,8 +1665,8 @@ local function SAOCQ_fake_script() -- TextButton_2.Script
 		script.Parent.Parent.Parent.page2.Visible = true
 	end)
 end
-coroutine.wrap(SAOCQ_fake_script)()
-local function TYDFBO_fake_script() -- feFLIP.Script 
+coroutine.wrap(DFJL_fake_script)()
+local function OTLOYG_fake_script() -- feFLIP.Script 
 	local script = Instance.new('Script', feFLIP)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1759,8 +1759,8 @@ local function TYDFBO_fake_script() -- feFLIP.Script
 		game.StarterGui:SetCore("SendNotification", {Title = "feFlip", Text = "feFlip loaded successfully!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
 	end)
 end
-coroutine.wrap(TYDFBO_fake_script)()
-local function BNYJ_fake_script() -- Hamster.Script 
+coroutine.wrap(OTLOYG_fake_script)()
+local function UFAJK_fake_script() -- Hamster.Script 
 	local script = Instance.new('Script', Hamster)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1826,8 +1826,8 @@ local function BNYJ_fake_script() -- Hamster.Script
 		humanoid.Died:Connect(function() tc:Disconnect() end)
 	end)
 end
-coroutine.wrap(BNYJ_fake_script)()
-local function BPVWC_fake_script() -- TextButton_3.Script 
+coroutine.wrap(UFAJK_fake_script)()
+local function CSVX_fake_script() -- TextButton_3.Script 
 	local script = Instance.new('Script', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1836,8 +1836,8 @@ local function BPVWC_fake_script() -- TextButton_3.Script
 		script.Parent.Parent.Parent.page1.Visible = false
 	end)
 end
-coroutine.wrap(BPVWC_fake_script)()
-local function SNTTOWX_fake_script() -- TextButton_4.Script 
+coroutine.wrap(CSVX_fake_script)()
+local function XRXKOAH_fake_script() -- TextButton_4.Script 
 	local script = Instance.new('Script', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1845,24 +1845,24 @@ local function SNTTOWX_fake_script() -- TextButton_4.Script
 		script.Parent.Parent.Parent.page1.Visible = true
 	end)
 end
-coroutine.wrap(SNTTOWX_fake_script)()
-local function XVIH_fake_script() -- IY.Script 
+coroutine.wrap(XRXKOAH_fake_script)()
+local function JDBJVQF_fake_script() -- IY.Script 
 	local script = Instance.new('Script', IY)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(XVIH_fake_script)()
-local function THCSCJT_fake_script() -- cobalt.Script 
+coroutine.wrap(JDBJVQF_fake_script)()
+local function ESTSQ_fake_script() -- cobalt.Script 
 	local script = Instance.new('Script', cobalt)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastefy.app/ykELyWcC/raw"))()
 	end)
 end
-coroutine.wrap(THCSCJT_fake_script)()
-local function ISCHF_fake_script() -- hydroxide.Script 
+coroutine.wrap(ESTSQ_fake_script)()
+local function RUOB_fake_script() -- hydroxide.Script 
 	local script = Instance.new('Script', hydroxide)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1877,32 +1877,32 @@ local function ISCHF_fake_script() -- hydroxide.Script
 		webImport("ui/main")
 	end)
 end
-coroutine.wrap(ISCHF_fake_script)()
-local function IUBOEMB_fake_script() -- dexplusplus.Script 
+coroutine.wrap(RUOB_fake_script)()
+local function GECH_fake_script() -- dexplusplus.Script 
 	local script = Instance.new('Script', dexplusplus)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://github.com/AZYsGithub/DexPlusPlus/releases/latest/download/out.lua"))()
 	end)
 end
-coroutine.wrap(IUBOEMB_fake_script)()
-local function QLDBP_fake_script() -- dexrecontinued.Script 
+coroutine.wrap(GECH_fake_script)()
+local function DELKBKE_fake_script() -- dexrecontinued.Script 
 	local script = Instance.new('Script', dexrecontinued)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://github.com/Tesker-103/DexRecontinued/releases/latest/download/out.lua"))()
 	end)
 end
-coroutine.wrap(QLDBP_fake_script)()
-local function TTIYU_fake_script() -- ssadda.Script 
+coroutine.wrap(DELKBKE_fake_script)()
+local function ZXXV_fake_script() -- ssadda.Script 
 	local script = Instance.new('Script', ssadda)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpyBeta.lua"))()
 	end)
 end
-coroutine.wrap(TTIYU_fake_script)()
-local function HGIZ_fake_script() -- tgwa.Script 
+coroutine.wrap(ZXXV_fake_script)()
+local function ENBMQ_fake_script() -- tgwa.Script 
 	local script = Instance.new('Script', tgwa)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2118,8 +2118,8 @@ local function HGIZ_fake_script() -- tgwa.Script
 	
 	end)
 end
-coroutine.wrap(HGIZ_fake_script)()
-local function YTRBF_fake_script() -- quirky.Script 
+coroutine.wrap(ENBMQ_fake_script)()
+local function CBFS_fake_script() -- quirky.Script 
 	local script = Instance.new('Script', quirky)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2129,24 +2129,24 @@ local function YTRBF_fake_script() -- quirky.Script
 		loadstring(game:HttpGet("https://gist.github.com/someunknowndude/38cecea5be9d75cb743eac8b1eaf6758/raw"))()
 	end)
 end
-coroutine.wrap(YTRBF_fake_script)()
-local function XOCL_fake_script() -- INFINITEYEALDIOE.Script 
+coroutine.wrap(CBFS_fake_script)()
+local function KLZUS_fake_script() -- INFINITEYEALDIOE.Script 
 	local script = Instance.new('Script', INFINITEYEALDIOE)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(XOCL_fake_script)()
-local function WQGBF_fake_script() -- RC7bystygian.Script 
+coroutine.wrap(KLZUS_fake_script)()
+local function ZVZJ_fake_script() -- RC7bystygian.Script 
 	local script = Instance.new('Script', RC7bystygian)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/b787QKMQ"))()
 	end)
 end
-coroutine.wrap(WQGBF_fake_script)()
-local function MZQOPF_fake_script() -- SilentExecutor.Script 
+coroutine.wrap(ZVZJ_fake_script)()
+local function JRAITQ_fake_script() -- SilentExecutor.Script 
 	local script = Instance.new('Script', SilentExecutor)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2512,18 +2512,18 @@ local function MZQOPF_fake_script() -- SilentExecutor.Script
 		end)
 	end)
 end
-coroutine.wrap(MZQOPF_fake_script)()
-local function EOVXVWN_fake_script() -- TextButton_5.Script 
+coroutine.wrap(JRAITQ_fake_script)()
+local function CHHR_fake_script() -- TextButton_5.Script 
 	local script = Instance.new('Script', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.page3.Visible = false
 		script.Parent.Parent.Parent.page2.Visible = false
-		sscript.Parent.Parent.Parent.page1.Visible = true
+		script.Parent.Parent.Parent.page1.Visible = true
 	end)
 end
-coroutine.wrap(EOVXVWN_fake_script)()
-local function FUXH_fake_script() -- TextButton_6.Script 
+coroutine.wrap(CHHR_fake_script)()
+local function FZSEY_fake_script() -- TextButton_6.Script 
 	local script = Instance.new('Script', TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2532,4 +2532,4 @@ local function FUXH_fake_script() -- TextButton_6.Script
 		script.Parent.Parent.Parent.page1.Visible = false
 	end)
 end
-coroutine.wrap(FUXH_fake_script)()
+coroutine.wrap(FZSEY_fake_script)()
