@@ -29903,7 +29903,7 @@ local button = Instance.new("TextButton")
 	button.BackgroundColor3 = blak
 	button.BorderColor3 = rede
 	button.BorderSizePixel = 3
-	button.Name = "Empty"
+	button.Name = "teamck4idlol"
 	button.Position = UDim2.new(0.5,3,0,165)
 	button.Size = UDim2.new(0.5,-3,0,30)
 	button.ZIndex = 2
@@ -29918,43 +29918,49 @@ local button = Instance.new("TextButton")
 	button.BackgroundColor3 = blak
 	button.BorderColor3 = rede
 	button.BorderSizePixel = 3
-	button.Name = "Empty"
+	button.Name = "35enz"
 	button.Position = UDim2.new(0,0,0,198)
 	button.Size = UDim2.new(0.5,0,0,30)
 	button.ZIndex = 2
 	button.Font = tef
 	button.FontSize = "Size14"
-	button.Text = "Empty"
+	button.Text = "Team 35 enz"
 	button.TextColor3 = whit
 	button.TextWrapped = true
+    button.MouseButton1Down:connect(function()
+		frame.Settings.Page1["Skybox/Decal ID"].TextBox.Text = 86965085747382
+	end)
 --
 local button = Instance.new("TextButton")
 	button.Parent = psd
 	button.BackgroundColor3 = blak
 	button.BorderColor3 = rede
 	button.BorderSizePixel = 3
-	button.Name = "Empty"
+	button.Name = "Teamvoiderthedestroyerbutton"
 	button.Position = UDim2.new(0.5,3,0,198)
 	button.Size = UDim2.new(0.48,0,0,30)
 	button.ZIndex = 2
 	button.Font = tef
 	button.FontSize = "Size14"
-	button.Text = "Empty"
+	button.Text = "Team Voiderthedestroyer"
 	button.TextColor3 = whit
 	button.TextWrapped = true
+    button.MouseButton1Down:connect(function()
+		frame.Settings.Page1["Skybox/Decal ID"].TextBox.Text = 119445389520206
+	end)
 --
 local button = Instance.new("TextButton")
 	button.Parent = psd
 	button.BackgroundColor3 = blak
 	button.BorderColor3 = rede
 	button.BorderSizePixel = 3
-	button.Name = "My Preset"
+	button.Name = "Team FAT!"
 	button.Position = UDim2.new(0,0,0,132)
 	button.Size = UDim2.new(0.499,0,0,30)
 	button.ZIndex = 2
 	button.Font = tef
 	button.FontSize = "Size14"
-	button.Text = "My Preset"
+	button.Text = "Team FAT !"
 	button.TextColor3 = whit
 	button.TextWrapped = true
 	button.MouseButton1Down:connect(function()
@@ -30013,7 +30019,7 @@ local t3xt = Instance.new("TextLabel")
 	t3xt.ZIndex = 2
 	t3xt.Font = tef
 	t3xt.FontSize = "Size14"
-	t3xt.Text = "Thank you for using c00lgui scripted! Addons coming soon! Post Ideas in the Thread!!!"
+	t3xt.Text = "Thank you for using c00lgui scripted! Addons coming soon! Post Ideas in the Thread!!!C00lgui modified by VOIDERTHEDESTROYER,original made by v3rx!"
 	t3xt.TextColor3 = whit
 	t3xt.TextWrapped = true
 	t3xt.TextYAlignment = "Top"
