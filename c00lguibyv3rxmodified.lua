@@ -1,5 +1,5 @@
 --Modified by VOIDERTHEDESTROYER
-blak = Color3.new24(24/255, 24/255, 24/255)
+blak = Color3.new(24/255, 24/255, 24/255)
 rede = Color3.new(255/255,0/255,0/255)
 tef = "SourceSans"
 whit = Color3.new(255/255,255/255,255/255)
