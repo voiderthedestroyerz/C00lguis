@@ -20,6 +20,11 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Text = "C00lGUI Reborn V4(Revamped)", 
 })
 
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local reelfebipasc = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local page1 = Instance.new("Frame")
@@ -69,6 +74,8 @@ local UIGridLayout_3 = Instance.new("UIGridLayout")
 local vpoderzjibn = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local creditsandshi = Instance.new("TextLabel")
+
+--Properties:
 
 reelfebipasc.Name = "reelfebipasc"
 reelfebipasc.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -297,9 +304,8 @@ page2.Parent = Frame
 page2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 page2.BorderColor3 = Color3.fromRGB(255, 0, 4)
 page2.BorderSizePixel = 3
-page2.Position = UDim2.new(-0, 0, 0.0869999975, 0)
-page2.Size = UDim2.new(0, 419, 0, 292)
-page2.Visible = false
+page2.Position = UDim2.new(0, 0, 0.0870000049, 0)
+page2.Size = UDim2.new(0, 417, 0, 292)
 
 feFLIP.Name = "feFLIP"
 feFLIP.Parent = page2
@@ -522,8 +528,8 @@ page3.Parent = Frame
 page3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 page3.BorderColor3 = Color3.fromRGB(255, 0, 4)
 page3.BorderSizePixel = 3
-page3.Position = UDim2.new(-0, 0, 0.0869999975, 0)
-page3.Size = UDim2.new(0, 419, 0, 292)
+page3.Position = UDim2.new(0, 0, 0.0870000049, 0)
+page3.Size = UDim2.new(0, 417, 0, 292)
 page3.Visible = false
 
 RC7bystygian.Name = "RC7 by stygian"
@@ -645,7 +651,7 @@ TextLabel.BorderSizePixel = 3
 TextLabel.Position = UDim2.new(-0.00044506017, 0, -0.00247248448, 0)
 TextLabel.Size = UDim2.new(0, 419, 0, 34)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "C00lgui Reborn by VOIDERTHEDESTROYER"
+TextLabel.Text = "C00lgui Reborn by VOIDERTHEDESTROYER(Revamped)"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -657,7 +663,7 @@ creditsandshi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 creditsandshi.BorderColor3 = Color3.fromRGB(255, 0, 4)
 creditsandshi.BorderSizePixel = 3
 creditsandshi.Position = UDim2.new(-0.00044506017, 0, 0.853170574, 0)
-creditsandshi.Size = UDim2.new(0, 418, 0, 55)
+creditsandshi.Size = UDim2.new(0, 419, 0, 55)
 creditsandshi.Font = Enum.Font.SourceSans
 creditsandshi.Text = "This is all for now,give suggestions in thread or comments!Created by Voiderthedestroyer,inspired by LordMuhammad's FE c00lgui also credits to v3rx for some scripts including billboard"
 creditsandshi.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -667,7 +673,7 @@ creditsandshi.TextWrapped = true
 
 -- Scripts:
 
-local function DGLN_fake_script() -- Skybox.Script 
+local function FSQC_fake_script() -- Skybox.Script 
 	local script = Instance.new('Script', Skybox)
 
 	--158118263
@@ -687,8 +693,8 @@ local function DGLN_fake_script() -- Skybox.Script
 	
 	script.Parent.MouseButton1Down:connect(click)
 end
-coroutine.wrap(DGLN_fake_script)()
-local function UDBWXGX_fake_script() -- DecalSpam.Script 
+coroutine.wrap(FSQC_fake_script)()
+local function ASQVVH_fake_script() -- DecalSpam.Script 
 	local script = Instance.new('Script', DecalSpam)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -726,8 +732,8 @@ local function UDBWXGX_fake_script() -- DecalSpam.Script
 		exPro(workspace)
 	end)
 end
-coroutine.wrap(UDBWXGX_fake_script)()
-local function QGTFERK_fake_script() -- mesagE.Script 
+coroutine.wrap(ASQVVH_fake_script)()
+local function STSRHG_fake_script() -- mesagE.Script 
 	local script = Instance.new('Script', mesagE)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -739,8 +745,8 @@ local function QGTFERK_fake_script() -- mesagE.Script
 		end
 	end)
 end
-coroutine.wrap(QGTFERK_fake_script)()
-local function HUABFIR_fake_script() -- HIINT.Script 
+coroutine.wrap(STSRHG_fake_script)()
+local function AFVZ_fake_script() -- HIINT.Script 
 	local script = Instance.new('Script', HIINT)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -752,8 +758,8 @@ local function HUABFIR_fake_script() -- HIINT.Script
 		end
 	end)
 end
-coroutine.wrap(HUABFIR_fake_script)()
-local function LHALVAL_fake_script() -- billboard.Script 
+coroutine.wrap(AFVZ_fake_script)()
+local function XCAJQ_fake_script() -- billboard.Script 
 	local script = Instance.new('Script', billboard)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -780,8 +786,8 @@ local function LHALVAL_fake_script() -- billboard.Script
 		f.TextYAlignment = "Bottom"
 	end)
 end
-coroutine.wrap(LHALVAL_fake_script)()
-local function FWUTCMV_fake_script() -- unanchor.Script 
+coroutine.wrap(XCAJQ_fake_script)()
+local function BZKFKHQ_fake_script() -- unanchor.Script 
 	local script = Instance.new('Script', unanchor)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -806,8 +812,8 @@ local function FWUTCMV_fake_script() -- unanchor.Script
 		end
 	end)
 end
-coroutine.wrap(FWUTCMV_fake_script)()
-local function VISV_fake_script() -- lalolhub.LocalScript 
+coroutine.wrap(BZKFKHQ_fake_script)()
+local function LEALSB_fake_script() -- lalolhub.LocalScript 
 	local script = Instance.new('LocalScript', lalolhub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -815,16 +821,16 @@ local function VISV_fake_script() -- lalolhub.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Obunga-666/Lalol-hub-without-hint/refs/heads/main/Lalol%20hub%20without%20hint"))()
 	end)
 end
-coroutine.wrap(VISV_fake_script)()
-local function UPAFY_fake_script() -- grabknife.LocalScript 
+coroutine.wrap(LEALSB_fake_script)()
+local function DRSQ_fake_script() -- grabknife.LocalScript 
 	local script = Instance.new('LocalScript', grabknife)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Icalock/Server/refs/heads/main/Grab%20V4.txt", true))()
 	end)
 end
-coroutine.wrap(UPAFY_fake_script)()
-local function PDWQCO_fake_script() -- c00lify.Script 
+coroutine.wrap(DRSQ_fake_script)()
+local function RIDU_fake_script() -- c00lify.Script 
 	local script = Instance.new('Script', c00lify)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -874,8 +880,8 @@ local function PDWQCO_fake_script() -- c00lify.Script
 		hint.Parent = workspace
 	end)
 end
-coroutine.wrap(PDWQCO_fake_script)()
-local function OTJWVKO_fake_script() -- grabknifev1.Script 
+coroutine.wrap(RIDU_fake_script)()
+local function XFNV_fake_script() -- grabknifev1.Script 
 	local script = Instance.new('Script', grabknifev1)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1609,32 +1615,32 @@ local function OTJWVKO_fake_script() -- grabknifev1.Script
 		inform("Grab script loaded succesfully.",2)
 	end)
 end
-coroutine.wrap(OTJWVKO_fake_script)()
-local function JIBB_fake_script() -- flood.Script 
+coroutine.wrap(XFNV_fake_script)()
+local function VFSVKQM_fake_script() -- flood.Script 
 	local script = Instance.new('Script', flood)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Workspace.Terrain:SetCells(Region3int16.new(Vector3int16.new(-100,-100,-100), Vector3int16.new(100,100,100)), 17, "Solid", "X")	
 	end)
 end
-coroutine.wrap(JIBB_fake_script)()
-local function LFQYJMP_fake_script() -- clear.Script 
+coroutine.wrap(VFSVKQM_fake_script)()
+local function HIYRPIH_fake_script() -- clear.Script 
 	local script = Instance.new('Script', clear)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Workspace.Terrain:Clear()
 	end)
 end
-coroutine.wrap(LFQYJMP_fake_script)()
-local function YCKVFY_fake_script() -- flood_2.Script 
+coroutine.wrap(HIYRPIH_fake_script)()
+local function AAENOI_fake_script() -- flood_2.Script 
 	local script = Instance.new('Script', flood_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent.reelfebipasc:Destroy()
 	end)
 end
-coroutine.wrap(YCKVFY_fake_script)()
-local function RZROGLG_fake_script() -- feFLIP.Script 
+coroutine.wrap(AAENOI_fake_script)()
+local function TYDO_fake_script() -- feFLIP.Script 
 	local script = Instance.new('Script', feFLIP)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1727,8 +1733,8 @@ local function RZROGLG_fake_script() -- feFLIP.Script
 		game.StarterGui:SetCore("SendNotification", {Title = "feFlip", Text = "feFlip loaded successfully!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
 	end)
 end
-coroutine.wrap(RZROGLG_fake_script)()
-local function SFWDA_fake_script() -- Hamster.Script 
+coroutine.wrap(TYDO_fake_script)()
+local function XPMWOF_fake_script() -- Hamster.Script 
 	local script = Instance.new('Script', Hamster)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1794,16 +1800,16 @@ local function SFWDA_fake_script() -- Hamster.Script
 		humanoid.Died:Connect(function() tc:Disconnect() end)
 	end)
 end
-coroutine.wrap(SFWDA_fake_script)()
-local function SCJRZWO_fake_script() -- IY.Script 
+coroutine.wrap(XPMWOF_fake_script)()
+local function YBTVP_fake_script() -- IY.Script 
 	local script = Instance.new('Script', IY)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(SCJRZWO_fake_script)()
-local function UIHAK_fake_script() -- Harked.Script 
+coroutine.wrap(YBTVP_fake_script)()
+local function KJUWZLU_fake_script() -- Harked.Script 
 	local script = Instance.new('Script', Harked)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1829,16 +1835,16 @@ local function UIHAK_fake_script() -- Harked.Script
 		end
 	end)
 end
-coroutine.wrap(UIHAK_fake_script)()
-local function GOBQKHP_fake_script() -- cobalt.Script 
+coroutine.wrap(KJUWZLU_fake_script)()
+local function HAVFL_fake_script() -- cobalt.Script 
 	local script = Instance.new('Script', cobalt)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastefy.app/ykELyWcC/raw"))()
 	end)
 end
-coroutine.wrap(GOBQKHP_fake_script)()
-local function IGNSXQW_fake_script() -- hydroxide.Script 
+coroutine.wrap(HAVFL_fake_script)()
+local function BRIQ_fake_script() -- hydroxide.Script 
 	local script = Instance.new('Script', hydroxide)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1853,32 +1859,32 @@ local function IGNSXQW_fake_script() -- hydroxide.Script
 		webImport("ui/main")
 	end)
 end
-coroutine.wrap(IGNSXQW_fake_script)()
-local function EXAHEU_fake_script() -- dexplusplus.Script 
+coroutine.wrap(BRIQ_fake_script)()
+local function RUUYKJJ_fake_script() -- dexplusplus.Script 
 	local script = Instance.new('Script', dexplusplus)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://github.com/AZYsGithub/DexPlusPlus/releases/latest/download/out.lua"))()
 	end)
 end
-coroutine.wrap(EXAHEU_fake_script)()
-local function QXBPYC_fake_script() -- dexrecontinued.Script 
+coroutine.wrap(RUUYKJJ_fake_script)()
+local function UVNOX_fake_script() -- dexrecontinued.Script 
 	local script = Instance.new('Script', dexrecontinued)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://github.com/Tesker-103/DexRecontinued/releases/latest/download/out.lua"))()
 	end)
 end
-coroutine.wrap(QXBPYC_fake_script)()
-local function CVHAIGW_fake_script() -- ssadda.Script 
+coroutine.wrap(UVNOX_fake_script)()
+local function WYTBU_fake_script() -- ssadda.Script 
 	local script = Instance.new('Script', ssadda)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpyBeta.lua"))()
 	end)
 end
-coroutine.wrap(CVHAIGW_fake_script)()
-local function FWWIL_fake_script() -- tgwa.Script 
+coroutine.wrap(WYTBU_fake_script)()
+local function DKHI_fake_script() -- tgwa.Script 
 	local script = Instance.new('Script', tgwa)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2094,8 +2100,8 @@ local function FWWIL_fake_script() -- tgwa.Script
 	
 	end)
 end
-coroutine.wrap(FWWIL_fake_script)()
-local function YGSJJXR_fake_script() -- quirky.Script 
+coroutine.wrap(DKHI_fake_script)()
+local function YEQHVJQ_fake_script() -- quirky.Script 
 	local script = Instance.new('Script', quirky)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2105,8 +2111,8 @@ local function YGSJJXR_fake_script() -- quirky.Script
 		loadstring(game:HttpGet("https://gist.github.com/someunknowndude/38cecea5be9d75cb743eac8b1eaf6758/raw"))()
 	end)
 end
-coroutine.wrap(YGSJJXR_fake_script)()
-local function IPLRZN_fake_script() -- voidersz.Script 
+coroutine.wrap(YEQHVJQ_fake_script)()
+local function ALKII_fake_script() -- voidersz.Script 
 	local script = Instance.new('Script', voidersz)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3444,24 +3450,24 @@ local function IPLRZN_fake_script() -- voidersz.Script
 		print("[Admin] Loaded. Press ; to open command box. Type ;help for commands.")
 	end)
 end
-coroutine.wrap(IPLRZN_fake_script)()
-local function DZXW_fake_script() -- fatesadmin.Script 
+coroutine.wrap(ALKII_fake_script)()
+local function QCOBKM_fake_script() -- fatesadmin.Script 
 	local script = Instance.new('Script', fatesadmin)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
 	end)
 end
-coroutine.wrap(DZXW_fake_script)()
-local function RSYW_fake_script() -- RC7bystygian.Script 
+coroutine.wrap(QCOBKM_fake_script)()
+local function EBKVHNQ_fake_script() -- RC7bystygian.Script 
 	local script = Instance.new('Script', RC7bystygian)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/b787QKMQ"))()
 	end)
 end
-coroutine.wrap(RSYW_fake_script)()
-local function KKCCK_fake_script() -- SilentExecutor.Script 
+coroutine.wrap(EBKVHNQ_fake_script)()
+local function DZKZLE_fake_script() -- SilentExecutor.Script 
 	local script = Instance.new('Script', SilentExecutor)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -3827,8 +3833,8 @@ local function KKCCK_fake_script() -- SilentExecutor.Script
 		end)
 	end)
 end
-coroutine.wrap(KKCCK_fake_script)()
-local function HEBAAYH_fake_script() -- Bricksserverside.Script 
+coroutine.wrap(DZKZLE_fake_script)()
+local function GTHADLT_fake_script() -- Bricksserverside.Script 
 	local script = Instance.new('Script', Bricksserverside)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -4076,16 +4082,16 @@ local function HEBAAYH_fake_script() -- Bricksserverside.Script
 		coroutine.wrap(GMOC_fake_script)()
 	end)
 end
-coroutine.wrap(HEBAAYH_fake_script)()
-local function GIOQC_fake_script() -- vpoderzjibn.Script 
+coroutine.wrap(GTHADLT_fake_script)()
+local function GNJJZMD_fake_script() -- vpoderzjibn.Script 
 	local script = Instance.new('Script', vpoderzjibn)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/voiderthedestroyerz/Scripts-archive/refs/heads/main/voiderzfetrollinggui.lua"))() 
 	end)
 end
-coroutine.wrap(GIOQC_fake_script)()
-local function AAZZZC_fake_script() -- Frame.LocalScript 
+coroutine.wrap(GNJJZMD_fake_script)()
+local function LANGND_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	-- Put this LocalScript inside: StarterGui.reelfebipasc.c00lgui
@@ -4148,8 +4154,8 @@ local function AAZZZC_fake_script() -- Frame.LocalScript
 	-- Start on page 1
 	showPage(1)
 end
-coroutine.wrap(AAZZZC_fake_script)()
-local function PJYD_fake_script() -- Frame.LocalScript 
+coroutine.wrap(LANGND_fake_script)()
+local function DBYO_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local gui = script.Parent -- Change this to your GUI object
@@ -4197,4 +4203,4 @@ local function PJYD_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PJYD_fake_script)()
+coroutine.wrap(DBYO_fake_script)()
